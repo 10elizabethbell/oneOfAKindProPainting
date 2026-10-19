@@ -31,6 +31,9 @@
   --on-navy-2:#b9c3e2;
   --accent:#2f5fe0;        /* form hover/focus outline (stands apart from the navy button fill) */
   --wall:#d5cab1;
+  --rule:rgba(22,44,110,.14);  /* list dividers */
+  --line:rgba(22,44,110,.22);  /* field and chip borders */
+  --tint:rgba(22,44,110,.08);  /* arrow circles */
   --sys:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
   --gutter:16px;
 }
@@ -61,7 +64,7 @@ p{margin:0}
 .hero{position:relative;min-height:min(100svh,900px);background:var(--navy);color:var(--paper);padding-bottom:270px;overflow:hidden;isolation:isolate}
 .hero canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0}
 .wall-zone{position:absolute;z-index:1;touch-action:none;-webkit-user-select:none;user-select:none;cursor:none}
-.wall-hint{position:absolute;left:14px;bottom:12px;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5c4a30;pointer-events:none;transition:opacity .6s}
+.wall-hint{position:absolute;z-index:1;left:var(--gutter);bottom:0;line-height:22px;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5c4a30;pointer-events:none;transition:opacity .6s}
 .wall-hint.gone{opacity:0}
 .top{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px var(--gutter);max-width:1440px;margin:0 auto}
 .brand{display:flex;align-items:center;gap:9px;text-decoration:none;min-height:48px}
@@ -74,7 +77,7 @@ p{margin:0}
 .hero-copy{position:relative;z-index:2;padding:26px var(--gutter) 0;max-width:640px}
 .hero h1{font-size:clamp(2.6rem,11.6vw,5.6rem);letter-spacing:-.025em;line-height:.94}
 .hero h1 em{font-style:normal;color:var(--gold)}
-.promise{margin-top:18px;font-size:clamp(1.02rem,4.6vw,1.25rem);font-weight:600;color:var(--on-navy);max-width:30ch}
+.promise{margin-top:18px;font-size:clamp(1.02rem,4.6vw,1.25rem);font-weight:600;color:var(--on-navy);max-width:30ch;text-wrap:balance}
 .actions{display:grid;gap:12px;margin-top:26px}
 
 /* ---------- section edges: ragged roller ends + drips ---------- */
@@ -89,13 +92,14 @@ p{margin:0}
 /* ---------- services ---------- */
 .services{padding:72px 0 96px}
 .services h2{color:var(--navy)}
-.rows{list-style:none;margin:30px 0 0;padding:0;border-top:2px solid rgba(22,44,110,.14)}
-.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:12px 0;border-bottom:2px solid rgba(22,44,110,.14);text-decoration:none;font-weight:900;text-transform:uppercase;font-size:clamp(1.25rem,6vw,1.9rem);letter-spacing:-.005em;color:var(--ink)}
+.rows{list-style:none;margin:30px 0 0;padding:0;border-top:2px solid var(--rule)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:12px 0;border-bottom:2px solid var(--rule);text-decoration:none;font-weight:900;text-transform:uppercase;font-size:clamp(1.25rem,6vw,1.9rem);letter-spacing:-.005em;color:var(--ink)}
 .row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
-.arrow{display:grid;place-items:center;width:46px;height:46px;flex:none;border-radius:50%;background:rgba(22,44,110,.08);color:var(--navy);transition:background-color .2s,color .2s}
+.arrow{display:grid;place-items:center;width:46px;height:46px;flex:none;border-radius:50%;background:var(--tint);color:var(--navy);transition:background-color .2s,color .2s}
 .arrow svg{width:20px;height:20px}
 .row:hover .arrow,.row:focus-visible .arrow{background:var(--gold);color:var(--navy-2)}
-.row:focus-visible .arrow{outline:3px solid var(--gold);outline-offset:3px}
+.row:focus-visible .arrow{outline:3px solid var(--accent);outline-offset:3px}
+.services :focus-visible,.estimate :focus-visible{outline-color:var(--accent)}
 .for{margin-top:18px;font-weight:600;color:var(--ink-2)}
 
 /* ---------- care ---------- */
@@ -105,31 +109,30 @@ p{margin:0}
 .care p{margin-top:22px;font-size:1.18rem;max-width:58ch}
 .care .btn{margin-top:30px;width:100%}
 
-/* ---------- steps ---------- */
-.steps{padding:120px 0 40px}
-.steps h2{color:var(--navy)}
-.steps ol{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:26px;counter-reset:s}
-.steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 14px;counter-increment:s}
-.steps li::before{content:counter(s);grid-row:span 2;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--navy);color:var(--gold);font-weight:900;font-size:1.35rem}
-.steps h3{font-size:1.2rem;align-self:end;padding-top:4px}
-.steps li p{color:var(--ink-2)}
+/* ---------- steps (inside the estimate) ---------- */
+.steps-list{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:22px;counter-reset:s}
+.steps-list li{display:grid;grid-template-columns:52px 1fr;gap:4px 14px;counter-increment:s}
+.steps-list li::before{content:counter(s);grid-row:span 2;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--navy);color:var(--gold);font-weight:900;font-size:1.35rem}
+.steps-list h3{font-size:1.15rem;align-self:end;padding-top:4px;color:var(--ink)}
+.steps-list p{color:var(--ink-2)}
 
 /* ---------- estimate form ---------- */
-.estimate{padding:64px 0 120px}
+.estimate{padding:120px 0 120px}
+.estimate form{margin-top:36px}
 .estimate h2{color:var(--navy)}
 form{margin-top:28px;display:grid;gap:22px;max-width:640px}
 .field{display:grid;gap:8px}
 label,.legend{font-weight:800;font-size:1rem;color:var(--ink)}
 .opt{font-weight:500;color:var(--ink-2)}
-input[type=text],input[type=tel],textarea{width:100%;min-height:54px;padding:14px 16px;border:2px solid rgba(22,44,110,.22);border-radius:12px;background:var(--paper);color:var(--ink);font:500 17px/1.4 var(--sys);caret-color:var(--navy);transition:border-color .15s,outline-color .15s}
+input[type=text],input[type=tel],textarea{width:100%;min-height:54px;padding:14px 16px;border:2px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);font:500 17px/1.4 var(--sys);caret-color:var(--navy);transition:border-color .15s,outline-color .15s}
 textarea{min-height:120px;resize:vertical}
-::placeholder{color:#717a9c}
+::placeholder{color:#646d90}
 input:hover,textarea:hover,input:focus,textarea:focus{outline:3px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
 fieldset{border:0;margin:0;padding:0;display:grid;gap:10px}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chip{position:relative}
 .chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
-.chip span{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 18px;border:2px solid rgba(22,44,110,.22);border-radius:999px;background:var(--paper);font-weight:700;cursor:pointer;transition:background-color .15s,color .15s,border-color .15s}
+.chip span{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 18px;border:2px solid var(--line);border-radius:999px;background:var(--paper);font-weight:700;cursor:pointer;transition:background-color .15s,color .15s,border-color .15s}
 .chip span::before{content:"";width:16px;height:16px;border-radius:50%;border:2px solid currentColor;opacity:.45;flex:none}
 .chip input:checked+span{background:var(--navy);border-color:var(--navy);color:var(--paper)}
 .chip input:checked+span::before{background:var(--gold);border-color:var(--gold);opacity:1}
@@ -172,13 +175,14 @@ footer h2 span{color:var(--gold)}
 }
 @media (min-width:900px){
   :root{--gutter:40px}
-  .hero{height:clamp(660px,100svh,920px);min-height:0;padding-bottom:0}
+  .hero{min-height:clamp(660px,100svh,920px);padding-bottom:84px}
+  .wall-hint{line-height:34px}
   .top{padding-top:18px}
   .brand svg{width:48px;height:48px}
   .brand b{font-size:1.4rem}
   .brand small{font-size:.75rem}
   .tel{font-size:1.15rem}
-  .hero-copy{padding-top:9vh;max-width:min(46vw,640px)}
+  .hero-copy{padding-top:clamp(24px,7vh,90px);max-width:min(46vw,640px)}
   .promise{font-size:1.25rem}
   .services .wrap{display:grid;grid-template-columns:5fr 7fr;gap:64px;align-items:start}
   .services{padding:120px 0}
@@ -187,10 +191,9 @@ footer h2 span{color:var(--gold)}
   .care{padding:96px 0 120px}
   .care .wrap{display:grid;grid-template-columns:6fr 5fr;gap:64px;align-items:end}
   .care p{margin-top:0}
-  .steps{padding:150px 0 40px}
-  .steps ol{grid-template-columns:repeat(3,1fr);gap:40px}
+  .estimate{padding-top:150px}
+  .estimate form{margin-top:6px}
   .estimate .wrap{display:grid;grid-template-columns:5fr 7fr;gap:64px}
-  form{margin-top:6px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -204,14 +207,15 @@ THESIS: The fresh start, done in front of you. A tired wall (scuffs, a crack, na
 OWN-WORLD: Royal navy paint with roller stipple, gold trim (crown, handle, buttons), ceiling-white reading sections, ragged roller ends with drips at every section edge, a white baseboard closing the hero. Heavy uppercase system type.
 STORY: This crew makes tired spaces look new and treats your place with care → here's what they do → how a free estimate works → send the request by text now.
 FIRST VIEWPORT: Header (crown-house mark + name left, tap-to-call number top right). Headline "A fresh start looks good here." on painted navy, promise line, gold "Get my free estimate" + outlined "Text us a photo". Below on phones (right on desktop): the old wall with the roller working it, baseboard at the bottom.
-FORM: Live roller canvas over a procedurally aged wall; 1st of 6 (runner-up: painter's tape peel). Seed: pitch-site unattended, code-led.
+FORM: Live roller canvas over a procedurally aged wall; 1st of 6 (runner-up: painter's tape peel). Seed: none; the pitch-site skill runs unattended, so no concept roll ran; code-led.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
 <a class="skip" href="#estimate">Skip to the free estimate</a>
 
 <header class="hero" id="top">
   <canvas id="wall" aria-hidden="true"></canvas>
-  <div class="wall-zone" aria-hidden="true"><span class="wall-hint">Drag to roll on a fresh coat</span></div>
+  <div class="wall-zone" aria-hidden="true"></div>
+  <span class="wall-hint" aria-hidden="true">Drag to roll on a fresh coat</span>
   <div class="top">
     <a class="brand" href="#top" aria-label="One Of A Kind Pro Painting &amp; Small Repairs LLC, home">
       <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M16 14l2.2-7 3.6 4.4L24 5l2.2 6.4L29.8 7l2.2 7z" fill="#e3b445"/><path d="M7 29l17-13 17 13" fill="none" stroke="#e3b445" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 27v13h22V27" fill="none" stroke="#fff" stroke-width="3.5" stroke-linejoin="round"/><rect x="21" y="29" width="6" height="6" rx="1" fill="#fff"/></svg>
@@ -224,7 +228,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <p class="promise">Quality work, honest service, affordable solutions.</p>
     <div class="actions">
       <a class="btn btn--gold" href="#estimate">Get my free estimate</a>
-      <a class="btn btn--line" id="textPhoto" href="sms:+13374586145?&amp;body=Hi%20One%20Of%20A%20Kind!%20Here%20are%20some%20photos%20of%20the%20space%20I%27d%20like%20an%20estimate%20for%3A">Text us a photo</a>
+      <a class="btn btn--line" id="textPhoto" title="Opens your messages app" href="sms:+13374586145?&amp;body=Hi%20One%20Of%20A%20Kind!%20Here%20are%20some%20photos%20of%20the%20space%20I%27d%20like%20an%20estimate%20for%3A">Text us a photo</a>
     </div>
   </div>
 </header>
@@ -251,34 +255,28 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <div class="wrap">
       <h2 id="care-h">Details make <span>the difference.</span></h2>
       <div>
-        <p>The room you wake up in, the shop your customers walk into, the rental that needs to be ready for the next family: we treat it like it's our own. Holes get patched before anything gets painted, lines get cut clean, and you get an honest price for honest work.</p>
+        <p>We treat your home, shop or rental like it's our own. We fix what needs fixing, cut clean lines, and don't call it done until the details are right.</p>
         <a class="btn btn--line" href="https://www.facebook.com/OneOfAKindProPainting"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46h1.6V4.46A21 21 0 0 0 14.3 4.3c-2.3 0-3.8 1.4-3.8 3.95v2.25H8v3h2.5V21z"/></svg>Click to see more of our work</a>
       </div>
     </div>
     <div class="edge edge--down" data-drips="4" aria-hidden="true"></div>
   </section>
 
-  <section class="steps" aria-labelledby="steps-h">
-    <div class="wrap">
-      <h2 id="steps-h">How your free estimate works</h2>
-      <ol>
-        <li><h3>Tell us what needs doing</h3><p>Fill in the form below, or text us photos of the space.</p></li>
-        <li><h3>Get your estimate</h3><p>We look it over and get back to you with a price. It costs you nothing.</p></li>
-        <li><h3>We get it done right</h3><p>We paint and repair with care for your space, down to the last detail.</p></li>
-      </ol>
-    </div>
-  </section>
-
   <section class="estimate" id="estimate" aria-labelledby="est-h">
     <div class="wrap">
       <div>
         <h2 id="est-h">Get your free estimate</h2>
+        <ol class="steps-list">
+        <li><h3>Tell us what needs doing</h3><p>Fill in the form below, or text us photos of the space.</p></li>
+        <li><h3>Get your estimate</h3><p>We look it over and get back to you with a price. It costs you nothing.</p></li>
+        <li><h3>We get it done right</h3><p>We paint and repair with care for your space, down to the last detail.</p></li>
+      </ol>
       </div>
       <form id="estForm" novalidate>
         <div class="field" id="f-name">
           <label for="name">Your name</label>
-          <input id="name" name="name" type="text" autocomplete="name" required>
-          <span class="err" role="alert">Please add your name so we know who's texting.</span>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="err-name">
+          <span class="err" id="err-name">Please add your name so we know who's texting.</span>
         </div>
         <fieldset>
           <legend class="legend">What do you need? <span class="opt">(pick any)</span></legend>
@@ -291,8 +289,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         </fieldset>
         <div class="field" id="f-job">
           <label for="job">Tell us about the job</label>
-          <textarea id="job" name="job" placeholder="e.g. Two bedrooms and a hallway, a few holes to patch first" required></textarea>
-          <span class="err" role="alert">A line or two about the job helps us price it.</span>
+          <textarea id="job" name="job" placeholder="e.g. Two bedrooms and a hallway, a few holes to patch first" required aria-describedby="err-job"></textarea>
+          <span class="err" id="err-job">A line or two about the job helps us price it.</span>
         </div>
         <div class="field">
           <label for="where">Where is the job? <span class="opt">(town or zip)</span></label>
@@ -357,7 +355,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   var W = 0, H = 0, dpr = 1, RL = 92, RD = 28, BASE_H = 22, zone = null;
-  var base, mask, mctx, tex, paint, pctx, over, prev, sprite, nap, probe, pbx;
+  var base, mask, mctx, tex, paint, pctx, over, prev, sprites, nap, probe, pbx;
   var seed = 7;
   function rnd(){ seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
   function mk(w, h){ var c = document.createElement('canvas'); c.width = Math.max(1, w); c.height = Math.max(1, h); return c; }
@@ -375,7 +373,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   function setup(){
     var r = hero.getBoundingClientRect(), w = Math.round(r.width), h = Math.round(r.height);
     if (!w || !h || (w === W && h === H)) return false;
-    W = w; H = h; dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    W = w; H = h; dpr = Math.min(window.devicePixelRatio || 1, W < 900 ? 1.25 : 1.5);
     cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
     var desk = W >= 900;
     RL = desk ? ROLLER_LEN[1] : ROLLER_LEN[0]; RD = RL * ROLLER_DIA; BASE_H = desk ? 34 : 22;
@@ -385,6 +383,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     zone.w = W - zone.x; zone.h = H - BASE_H - zone.y;
     zoneEl.style.left = zone.x + 'px'; zoneEl.style.top = zone.y + 'px';
     zoneEl.style.width = zone.w + 'px'; zoneEl.style.height = zone.h + 'px';
+    if (hint) hint.style.left = (zone.x ? zone.x + 14 : 16) + 'px';
     var cw = cv.width, ch = cv.height;
     base = mk(cw, ch); mask = mk(cw, ch); mctx = mask.getContext('2d');
     paint = mk(cw, ch); pctx = paint.getContext('2d'); over = mk(cw, ch); prev = mk(cw, ch);
@@ -397,9 +396,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   }
 
   /* -- the roller's footprint: streaky nap, heavier at the ends (tram lines) -- */
-  function makeSprite(){
+  function makeSprite(){ sprites = []; for (var v = 0; v < 4; v++) sprites.push(oneSprite()); } // variants break up the plaid
+  function oneSprite(){
     var sw = Math.round(RL * dpr), sh = Math.max(2, Math.round(STAMP_H * dpr));
-    sprite = mk(sw, sh);
+    var sprite = mk(sw, sh);
     var g = sprite.getContext('2d'), id = g.createImageData(sw, sh), d = id.data, cols = [], v = 0.8, x, y;
     for (x = 0; x < sw; x++){ v = clamp(v + (rnd() - 0.5) * 0.18, 0.68, 1); cols[x] = v; }
     for (x = 1; x < sw - 1; x++) cols[x] = (cols[x-1] + cols[x] * 2 + cols[x+1]) / 4;
@@ -413,6 +413,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       }
     }
     g.putImageData(id, 0, 0);
+    return sprite;
   }
 
   /* -- fresh navy with a fine roller stipple -- */
@@ -452,20 +453,17 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     if (Z.w > 200 && Z.h > 150){
       var fw = Math.min(Z.w * 0.38, 230), fh = fw * 0.74;
       var fx = Z.x + 26 + rnd() * Math.max(0, Z.w - fw - 52), fy = Z.y + 34 + rnd() * Math.max(0, (Z.h - fh - 70) * 0.6);
-      b.save(); b.shadowColor = 'rgba(105,84,52,.45)'; b.shadowBlur = 7;
-      b.strokeStyle = 'rgba(140,116,80,.16)'; b.lineWidth = 3; b.strokeRect(fx, fy, fw, fh); b.restore();
-      b.fillStyle = 'rgba(236,229,210,.85)'; b.fillRect(fx, fy, fw, fh);
+      b.save(); b.filter = 'blur(3px)'; b.fillStyle = 'rgba(236,229,210,.38)'; b.fillRect(fx, fy, fw, fh); b.restore();
       hole(b, fx + fw / 2, fy - 14, 2.2);
     }
     for (i = 0; i < 4; i++) hole(b, Z.x + 20 + rnd() * (Z.w - 40), Z.y + 20 + rnd() * (Z.h - 40), 1.5 + rnd());
-    // spackle patches nobody painted over
+    // spackle patches nobody painted over: flat, sanded ovals
     for (i = 0; i < 2; i++){
-      var sx = Z.x + 30 + rnd() * (Z.w - 60), sy = Z.y + 30 + rnd() * (Z.h - 60), s = 9 + rnd() * 9;
-      for (var k = 0; k < 26; k++){
-        var a = rnd() * 6.283, d = rnd() * s * 0.7;
-        b.fillStyle = 'rgba(243,240,231,' + (0.35 + rnd() * 0.4) + ')';
-        b.beginPath(); b.arc(sx + Math.cos(a) * d, sy + Math.sin(a) * d * 0.8, s * (0.25 + rnd() * 0.35), 0, 6.283); b.fill();
-      }
+      var sx = Z.x + 30 + rnd() * (Z.w - 60), sy = Z.y + 50 + rnd() * (Z.h - 80), s = 10 + rnd() * 10;
+      b.save(); b.translate(sx, sy); b.rotate(rnd() * 3); b.scale(1, 0.62 + rnd() * 0.2);
+      var sg = b.createRadialGradient(0, 0, 0, 0, 0, s);
+      sg.addColorStop(0, 'rgba(244,241,232,.62)'); sg.addColorStop(0.7, 'rgba(242,238,228,.45)'); sg.addColorStop(1, 'rgba(242,238,228,0)');
+      b.fillStyle = sg; b.beginPath(); b.arc(0, 0, s, 0, 6.283); b.fill(); b.restore();
     }
     // scuffs low on the wall
     b.lineCap = 'round';
@@ -474,7 +472,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       b.strokeStyle = 'rgba(64,54,44,' + (0.12 + rnd() * 0.16) + ')'; b.lineWidth = 1.5 + rnd() * 3.5;
       b.beginPath(); b.moveTo(x0, y0); b.quadraticCurveTo(x0 + len * 0.5, y0 - 4 + rnd() * 8, x0 + len, y0 + (rnd() - 0.5) * 10); b.stroke();
     }
-    crack(b, Z.x + Z.w * (0.15 + rnd() * 0.6), Z.y + 2, 70 + rnd() * 110, 1.1 + rnd() * 0.5);
+    crack(b, Z.x + Z.w * (0.15 + rnd() * 0.6), Z.y + 44 + rnd() * 30, 70 + rnd() * 110, 1.5 + rnd() * 0.6);
     // a water ring on wide walls
     if (Z.w > 500){
       var wx = Z.x + Z.w * (0.6 + rnd() * 0.3), wy = Z.y + 40 + rnd() * 50, wr = 26 + rnd() * 18;
@@ -550,7 +548,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   var dirty = true;
   function stamp(x, y, a){
     mctx.globalAlpha = a;
-    mctx.drawImage(sprite, (x - RL / 2) * dpr, (y - STAMP_H / 2) * dpr, RL * dpr, STAMP_H * dpr);
+    var sp = sprites[(rnd() * sprites.length) | 0];
+    x += (rnd() - 0.5) * 1.2; y += rnd() * STAMP_STEP;
+    mctx.drawImage(sp, (x - RL / 2) * dpr, (y - STAMP_H / 2) * dpr, RL * dpr, STAMP_H * dpr);
   }
 
   function rollTo(x0, y0, x1, y1){
@@ -577,6 +577,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   function compose(g){
     if (dirty){
       pctx.globalCompositeOperation = 'copy'; pctx.drawImage(mask, 0, 0);
+      pctx.globalCompositeOperation = 'source-over'; pctx.drawImage(mask, 0, 0); // a loaded coat hides the wall
       pctx.globalCompositeOperation = 'source-in'; pctx.drawImage(tex, 0, 0);
       pctx.globalCompositeOperation = 'source-over'; dirty = false;
     }
@@ -796,7 +797,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   var form = document.getElementById('estForm'); if (!form) return;
   var out = document.getElementById('msgOut'), fb = document.getElementById('fallback'), copyBtn = document.getElementById('copyBtn');
   function val(id){ return (document.getElementById(id).value || '').trim(); }
-  function mark(id, bad){ document.getElementById(id).classList.toggle('bad', bad); }
+  function mark(id, bad){ var f = document.getElementById(id); f.classList.toggle('bad', bad); f.querySelector('input,textarea').setAttribute('aria-invalid', bad ? 'true' : 'false'); }
   ['name', 'job'].forEach(function(id){ document.getElementById(id).addEventListener('input', function(){ mark('f-' + id, false); }); });
   form.addEventListener('submit', function(e){
     e.preventDefault();
@@ -813,7 +814,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     if (val('when')) lines.push('When: ' + val('when'));
     var msg = lines.join('\n');
     out.textContent = msg; fb.classList.add('on');
-    window.location.href = 'sms:' + NUMBER + '?&body=' + encodeURIComponent(msg);
+    // a real link tap hands off to Messages more reliably inside Facebook's in-app browser
+    var link = document.createElement('a'); link.href = 'sms:' + NUMBER + '?&body=' + encodeURIComponent(msg);
+    document.body.appendChild(link); link.click(); link.remove();
   });
   copyBtn.addEventListener('click', function(){
     var t = out.textContent;

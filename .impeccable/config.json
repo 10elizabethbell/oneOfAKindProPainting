@@ -20,6 +20,39 @@
         "value": "primary font: roboto",
         "createdAt": "2026-10-19T03:44:20.969Z",
         "reason": "Ellie house style (pitch-site ellie-taste.md): system font stack on every pitch site; Roboto is only the Android system face"
+      },
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-10-19T03:45:06.100Z",
+        "reason": "Ellie house style (pitch-site ellie-taste.md): system font stack on every pitch site; Roboto is only the Android system face"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-19T03:45:06.180Z",
+        "reason": "Claude: only hit is the ruled service list; its border-top is a divider and rows carry 12px vertical padding"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-19T03:45:06.257Z",
+        "reason": "Claude: rule measures only small text; headings run 2rem to 5.6rem, a clear display/body step"
+      },
+      {
+        "rule": "gray-on-color",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-19T03:46:24.899Z",
+        "reason": "Claude: only hit is #e9edf8, a navy-tinted near-white at 13:1 on #162c6e"
       }
     ]
   }
