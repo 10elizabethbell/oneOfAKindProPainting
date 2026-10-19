@@ -1,0 +1,452 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T03:53:04.618129+00:00",
+  "title": "Design System: One Of A Kind Pro Painting & Small Repairs LLC",
+  "extensions": {
+    "colorMeta": {
+      "royal-navy": {
+        "role": "primary",
+        "displayName": "Royal Navy",
+        "canonical": "oklch(32.1% 0.118 266)",
+        "tonalRamp": [
+          "#010331",
+          "#0b1d57",
+          "#223a7d",
+          "#3e59a0",
+          "#5c7ac3",
+          "#7c9ce8",
+          "#a3c3ff",
+          "#d2eeff"
+        ]
+      },
+      "navy-deep": {
+        "role": "primary",
+        "displayName": "Navy Deep",
+        "canonical": "oklch(27.7% 0.103 266)",
+        "tonalRamp": [
+          "#01042e",
+          "#0e1e52",
+          "#263c76",
+          "#425b98",
+          "#607bbb",
+          "#809ddf",
+          "#a6c3ff",
+          "#d4eeff"
+        ]
+      },
+      "crown-gold": {
+        "role": "secondary",
+        "displayName": "Crown Gold",
+        "canonical": "oklch(79.3% 0.136 85)",
+        "tonalRamp": [
+          "#1d0300",
+          "#3d1a00",
+          "#5f3500",
+          "#805400",
+          "#a27500",
+          "#c5971d",
+          "#e8be60",
+          "#ffea9f"
+        ]
+      },
+      "gold-hover": {
+        "role": "secondary",
+        "displayName": "Gold Hover",
+        "canonical": "oklch(84.1% 0.128 87)",
+        "tonalRamp": [
+          "#1c0400",
+          "#3b1c00",
+          "#5c3700",
+          "#7d5600",
+          "#9e7700",
+          "#c1982d",
+          "#e5bf66",
+          "#ffeba3"
+        ]
+      },
+      "focus-blue": {
+        "role": "tertiary",
+        "displayName": "Focus Blue",
+        "canonical": "oklch(53.2% 0.204 265)",
+        "tonalRamp": [
+          "#030043",
+          "#010c71",
+          "#0b2ca1",
+          "#214ece",
+          "#3f72f4",
+          "#6096ff",
+          "#8ec0ff",
+          "#c1edff"
+        ]
+      },
+      "ceiling-white": {
+        "role": "neutral",
+        "displayName": "Ceiling White",
+        "canonical": "oklch(97.4% 0.005 275)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232427",
+          "#3f4043",
+          "#5d5d61",
+          "#7c7d80",
+          "#9d9ea2",
+          "#c3c4c8",
+          "#edeef2"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(26.5% 0.083 268)",
+        "tonalRamp": [
+          "#020629",
+          "#13204c",
+          "#2d3d6b",
+          "#495b8d",
+          "#687baf",
+          "#889dd3",
+          "#adc3fb",
+          "#d9eeff"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "oklch(44.1% 0.071 272)",
+        "tonalRamp": [
+          "#040627",
+          "#192046",
+          "#333d65",
+          "#505b86",
+          "#6e7ba8",
+          "#8f9ccb",
+          "#b4c2f3",
+          "#deedff"
+        ]
+      },
+      "on-navy": {
+        "role": "neutral",
+        "displayName": "On Navy",
+        "canonical": "oklch(94.6% 0.015 270)",
+        "tonalRamp": [
+          "#090b12",
+          "#21242c",
+          "#3c4048",
+          "#5a5d67",
+          "#797d87",
+          "#9a9ea8",
+          "#c0c4ce",
+          "#eaeef9"
+        ]
+      },
+      "on-navy-soft": {
+        "role": "neutral",
+        "displayName": "On Navy Soft",
+        "canonical": "oklch(82.0% 0.045 271)",
+        "tonalRamp": [
+          "#05091e",
+          "#1c223a",
+          "#373e58",
+          "#545c78",
+          "#737c99",
+          "#949dbb",
+          "#b9c3e2",
+          "#e3eeff"
+        ]
+      },
+      "old-wall": {
+        "role": "neutral",
+        "displayName": "Old Wall",
+        "canonical": "oklch(84.1% 0.036 87)",
+        "tonalRamp": [
+          "#120a00",
+          "#2b230e",
+          "#483f2a",
+          "#665d46",
+          "#867c65",
+          "#a89d85",
+          "#cec3aa",
+          "#f9eed4"
+        ]
+      },
+      "error-red": {
+        "role": "error",
+        "displayName": "Error Red",
+        "canonical": "oklch(50.1% 0.178 29)",
+        "tonalRamp": [
+          "#2e0000",
+          "#570000",
+          "#830000",
+          "#ac1d17",
+          "#d2463a",
+          "#f96b5c",
+          "#ff9c8b",
+          "#ffcfbf"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "rgba(22,44,110,.14)",
+        "tonalRamp": [
+          "#010331",
+          "#0b1d57",
+          "#223a7d",
+          "#3e59a0",
+          "#5c7ac3",
+          "#7c9ce8",
+          "#a3c3ff",
+          "#d2eeff"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "canonical": "rgba(22,44,110,.22)",
+        "tonalRamp": [
+          "#010331",
+          "#0b1d57",
+          "#223a7d",
+          "#3e59a0",
+          "#5c7ac3",
+          "#7c9ce8",
+          "#a3c3ff",
+          "#d2eeff"
+        ]
+      },
+      "tint": {
+        "role": "neutral",
+        "displayName": "Tint",
+        "canonical": "rgba(22,44,110,.08)",
+        "tonalRamp": [
+          "#010331",
+          "#0b1d57",
+          "#223a7d",
+          "#3e59a0",
+          "#5c7ac3",
+          "#7c9ce8",
+          "#a3c3ff",
+          "#d2eeff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; final phrase gold."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings and the footer close."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service row labels and step headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form labels and legends."
+      }
+    },
+    "shadows": [
+      {
+        "name": "roller-cast",
+        "value": "canvas shadow rgba(8,14,40,.35), blur 10-18px, offset 3-7px / 6-14px by lift",
+        "purpose": "Hero canvas only: the roller lifting off the wall. The page itself has no shadows."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state",
+        "value": "0.15-0.2s on background-color, color, border-color",
+        "purpose": "Hover and selection changes on buttons, chips, fields, arrows."
+      },
+      {
+        "name": "press",
+        "value": "translateY(1px), 0.15s",
+        "purpose": "Button :active."
+      },
+      {
+        "name": "drip-run",
+        "value": "height 2.8s (x0.7-1.3) cubic-bezier(.22,.7,.2,1), delay 0-0.8s, once on first view",
+        "purpose": "Section-edge drips."
+      },
+      {
+        "name": "hint-fade",
+        "value": "opacity .6s",
+        "purpose": "Hero drag hint fades after first touch."
+      },
+      {
+        "name": "wall-loop",
+        "value": "one requestAnimationFrame loop; paused off-screen and in hidden tabs; still frame under prefers-reduced-motion",
+        "purpose": "The roller wall."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "380px"
+      },
+      {
+        "name": "sm",
+        "value": "600px"
+      },
+      {
+        "name": "desktop",
+        "value": "900px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Gold pill for the main action on navy grounds.",
+      "html": "<div class=\"ds-navy\"><a class=\"ds-btn ds-btn-gold\" href=\"#\">Get my free estimate</a></div>",
+      "css": ".ds-navy{background:#162c6e;padding:24px}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;border:2px solid transparent;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-weight:800;font-size:1.02rem;line-height:1;letter-spacing:.02em;text-decoration:none;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .15s}.ds-btn:active{transform:translateY(1px)}.ds-btn:focus-visible{outline:3px solid #e3b445;outline-offset:3px}.ds-btn-gold{background:#e3b445;border-color:#e3b445;color:#10225a}.ds-btn-gold:hover{background:#efc560;border-color:#efc560}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Outlined pill for the secondary action on navy.",
+      "html": "<div class=\"ds-navy\"><a class=\"ds-btn ds-btn-line\" href=\"#\">Text us a photo</a></div>",
+      "css": ".ds-navy{background:#162c6e;padding:24px}.ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:999px;border:2px solid transparent;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-weight:800;font-size:1.02rem;line-height:1;letter-spacing:.02em;text-decoration:none;cursor:pointer;transition:background-color .2s,border-color .2s,transform .15s}.ds-btn:active{transform:translateY(1px)}.ds-btn:focus-visible{outline:3px solid #e3b445;outline-offset:3px}.ds-btn-line{border-color:#e9edf8;color:#fff;background:transparent}.ds-btn-line:hover{background:rgba(255,255,255,.1)}"
+    },
+    {
+      "name": "Submit Button",
+      "kind": "button",
+      "refersTo": "button-submit",
+      "description": "Full-width navy pill that sends the estimate by text; Focus Blue outline on hover and focus.",
+      "html": "<button class=\"ds-send\" type=\"button\">Text my estimate request</button>",
+      "css": ".ds-send{width:100%;max-width:640px;min-height:56px;padding:0 26px;border:0;border-radius:999px;background:#162c6e;color:#fff;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-weight:800;font-size:1.02rem;letter-spacing:.02em;cursor:pointer;transition:background-color .2s,transform .15s}.ds-send:hover{background:#10225a}.ds-send:hover,.ds-send:focus-visible{outline:3px solid #2f5fe0;outline-offset:3px}.ds-send:active{transform:translateY(1px)}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Ruled uppercase row; on hover or focus only the arrow circle changes.",
+      "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\">Interior painting<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M5 12h13M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\">Small repairs<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M5 12h13M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li></ul>",
+      "css": ".ds-rows{list-style:none;margin:0;padding:0;border-top:2px solid rgba(22,44,110,.14);background:#f5f6fa}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:12px 0;border-bottom:2px solid rgba(22,44,110,.14);text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-weight:900;text-transform:uppercase;font-size:1.6rem;letter-spacing:-.005em;color:#14214d}.ds-row:hover,.ds-row:focus-visible{outline:none;background:none;box-shadow:none}.ds-arrow{display:grid;place-items:center;width:46px;height:46px;flex:none;border-radius:50%;background:rgba(22,44,110,.08);color:#162c6e;transition:background-color .2s,color .2s}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:#e3b445;color:#10225a}.ds-row:focus-visible .ds-arrow{outline:3px solid #2f5fe0;outline-offset:3px}"
+    },
+    {
+      "name": "Choice Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Checkbox pill inside the form; navy with a gold dot when selected.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Interior painting</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Small repairs</span></label></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px}.ds-chip{position:relative}.ds-chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}.ds-chip span{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 18px;border:2px solid rgba(22,44,110,.22);border-radius:999px;background:#fff;color:#14214d;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-weight:700;font-size:17px;cursor:pointer;transition:background-color .15s,color .15s,border-color .15s}.ds-chip span::before{content:\"\";width:16px;height:16px;border-radius:50%;border:2px solid currentColor;opacity:.45;flex:none}.ds-chip input:checked+span{background:#162c6e;border-color:#162c6e;color:#fff}.ds-chip input:checked+span::before{background:#e3b445;border-color:#e3b445;opacity:1}.ds-chip span:hover,.ds-chip input:focus-visible+span{outline:3px solid #2f5fe0;outline-offset:1px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Labeled field; Focus Blue border and outline on hover and focus.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-n\">Your name</label><input id=\"ds-n\" type=\"text\"></div>",
+      "css": ".ds-field{display:grid;gap:8px;max-width:640px;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;}.ds-field label{font-weight:800;font-size:1rem;color:#14214d}.ds-field input{width:100%;box-sizing:border-box;min-height:54px;padding:14px 16px;border:2px solid rgba(22,44,110,.22);border-radius:12px;background:#fff;color:#14214d;font:500 17px/1.4 inherit;transition:border-color .15s,outline-color .15s}.ds-field input:hover,.ds-field input:focus{outline:3px solid #2f5fe0;outline-offset:1px;border-color:#2f5fe0}"
+    },
+    {
+      "name": "Numbered Step",
+      "kind": "custom",
+      "refersTo": "step-number",
+      "description": "Static step: navy circle with a gold numeral, uppercase title, soft line.",
+      "html": "<ol class=\"ds-steps\"><li><h3>Tell us what needs doing</h3><p>Fill in the form below, or text us photos of the space.</p></li><li><h3>Get your estimate</h3><p>We look it over and get back to you with a price.</p></li></ol>",
+      "css": ".ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:22px;counter-reset:s;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;}.ds-steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 14px;counter-increment:s}.ds-steps li::before{content:counter(s);grid-row:span 2;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:#162c6e;color:#e3b445;font-weight:900;font-size:1.35rem}.ds-steps h3{margin:0;font-size:1.15rem;font-weight:900;text-transform:uppercase;line-height:1;align-self:end;padding-top:4px;color:#14214d}.ds-steps p{margin:0;color:#45507a;font-size:17px;line-height:1.55}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Mark and wordmark left, tap-to-call number top right; no menu.",
+      "html": "<div class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><span><b>One Of A Kind</b><small>Pro Painting<br>&amp; Small Repairs</small></span></a><a class=\"ds-tel\" href=\"tel:+13374586145\">337-458-6145</a></div>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;background:#162c6e;color:#fff;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;}.ds-brand{text-decoration:none;color:inherit;min-height:48px;display:flex;align-items:center}.ds-brand b{display:block;font-style:italic;font-weight:900;font-size:1.12rem;line-height:1;letter-spacing:-.01em}.ds-brand small{display:block;margin-top:3px;font-size:.7rem;font-weight:800;letter-spacing:.1em;line-height:1.25;text-transform:uppercase;color:#e3b445}.ds-tel{min-height:44px;display:flex;align-items:center;font-weight:800;font-size:.98rem;color:inherit;text-decoration:none;font-variant-numeric:tabular-nums}.ds-tel:hover{color:#e3b445}.ds-tel:focus-visible{outline:3px solid #e3b445;outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Roller Edge",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Ragged roller end where a navy band meets white, with a drip that has run.",
+      "html": "<div class=\"ds-edgewrap\"><div class=\"ds-band\"></div><svg class=\"ds-edge\" viewBox=\"0 0 300 26\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><path fill=\"#162c6e\" d=\"M0,-2 L0,13 L46,12.4 L92,14 L92,8 L140,7.6 L184,9 L184,15 L232,15.6 L300,14 L300,-2Z\"/><g fill=\"#162c6e\"><circle cx=\"30\" cy=\"16.5\" r=\"1.1\"/><circle cx=\"120\" cy=\"11\" r=\".8\"/><circle cx=\"210\" cy=\"19\" r=\"1\"/></g></svg><span class=\"ds-drip\"></span></div>",
+      "css": ".ds-edgewrap{position:relative;background:#f5f6fa;padding-bottom:70px}.ds-band{height:60px;background:#162c6e}.ds-edge{display:block;width:100%;height:26px;margin-top:-1px}.ds-drip{position:absolute;top:78px;left:62%;width:6px;height:40px;background:#162c6e;border-radius:0 0 3px 3px}.ds-drip::after{content:\"\";position:absolute;left:50%;bottom:-3.3px;width:10.2px;height:11.4px;transform:translateX(-50%);background:inherit;border-radius:50% 50% 50% 50% / 42% 42% 58% 58%}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Fresh Coat",
+    "overview": "The whole site is a room being repainted. The first screen is an old wall (yellowed plaster, scuffs, a crack, nail holes, the clean ghost of a frame that hung for years, a white baseboard) with a roller laying royal navy over it in real time; the visitor's finger or mouse can take the roller. Below the hero the world holds together through three materials only: wet royal navy paint (the ground of the hero, the care band and the footer), gold trim (the roller handle, the crown in the mark, the primary button, the emphasis words in headlines), and ceiling white for the sections where people read and fill in the form. Where navy meets white, the boundary is a ragged roller end with spatter, and on the way out of a navy band a few drips run down once.\n\nDensity is low and the voice is loud: heavy uppercase headlines, few words, wide ruled rows instead of cards. Nothing floats; there are no cards, no shadows on the page, no photography. The paint is the decoration, and every effect has to read as the real material (stipple, tram lines from the roller ends, drips with a bead at the tip).\n\nThe world comes from the business's own flyer (royal navy, gold, white; the crown on the roofline). It refuses the painter template: stock living-room photo, icon-card service grid, testimonial carousel.",
+    "keyCharacteristics": [
+      "Royal navy and ceiling white alternate as full-bleed bands; gold is trim, never a ground.",
+      "Section boundaries are painted edges (ragged roller end plus spatter), never straight lines or curves.",
+      "Heavy (900) uppercase display type on a system stack; body at 17px.",
+      "Pill-shaped controls, ruled list rows, no cards, no page shadows.",
+      "One signature live element (the roller wall); everything else is still except brief state transitions and the one-time drips."
+    ],
+    "rules": [
+      {
+        "name": "The Trim Rule",
+        "body": "Gold is trim: buttons, emphasis words, icons, handles, rings. It never fills a section or a card.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Hover Colors Rule",
+        "body": "Gold answers hover on navy grounds and on the service-row arrow; Focus Blue answers hover and focus inside the form. Never cross them (no gold outlines on form fields, no blue fills).",
+        "section": "colors"
+      },
+      {
+        "name": "The Weight-Not-Face Rule",
+        "body": "Hierarchy comes from 900 uppercase against 400 sentence case. Don't add a second family or mid weights for headings.",
+        "section": "typography"
+      },
+      {
+        "name": "The Gold Phrase Rule",
+        "body": "A headline may turn its final phrase gold (on navy) as the one emphasis. One gold phrase per heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paint-Is-The-Depth Rule",
+        "body": "Don't add shadows or raised cards to the page. If a surface needs to read as in front, paint it navy and give it a roller edge.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** alternate Royal Navy and Ceiling White bands, and join them with a roller edge (drips only on a band's bottom edge).",
+      "**Do** keep gold as trim: the primary button, one gold phrase per heading on navy, icons, focus rings.",
+      "**Do** outline every form control in Focus Blue (3px) on hover and focus; keep gold for the service-row arrow and navy grounds.",
+      "**Do** keep controls at 44px minimum (buttons 56px, chips 48px, fields 54px) and form text at 17px.",
+      "**Do** put the phone number in the header's top-right corner as a `tel:` link, and nowhere else on the first screen. It may repeat beside the form and in the footer.",
+      "**Do** keep the business email in the footer only.",
+      "**Do** keep the hero to the headline, the promise line and at most two buttons: gold for the estimate, outlined for the secondary action. No Call button under the headline.",
+      "**Do** make every effect read as the real material, and keep text in a clear zone free of canvas detail.",
+      "**Do** pause all motion off-screen and give reduced-motion visitors a still frame."
+    ],
+    "donts": [
+      "**Don't** add a sticky bar fixed to the bottom of the phone screen.",
+      "**Don't** give a service row an outline, background tint or shadow on hover or focus; only its arrow changes.",
+      "**Don't** use pill or chip shapes for anything that isn't interactive (service areas, tags, labels). Pills are buttons and form choices only.",
+      "**Don't** add cards, box shadows or straight-line section dividers; depth is paint.",
+      "**Don't** fill a section with gold or use Old Wall as a UI surface.",
+      "**Don't** publish facts the business hasn't given (service area, hours, years, licensing, insurance, prices, reviews, owner name), and add no demo or sample wording.",
+      "**Don't** add email buttons, email links outside the footer, or a send-by-email option on the form.",
+      "**Don't** run a second animation loop or add looping ambient motion outside the hero."
+    ]
+  }
+}
