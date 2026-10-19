@@ -53,6 +53,108 @@
         ],
         "createdAt": "2026-10-19T03:46:24.899Z",
         "reason": "Claude: only hit is #e9edf8, a navy-tinted near-white at 13:1 on #162c6e"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "8px",
+        "createdAt": "2026-10-19T03:54:48.280Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "3px",
+        "createdAt": "2026-10-19T03:54:48.357Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#5c4a30",
+        "createdAt": "2026-10-19T03:54:48.440Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift (drag hint on baseboard)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#646d90",
+        "createdAt": "2026-10-19T03:54:48.517Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift (placeholder, 4.5:1 fix)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": ".75rem",
+        "createdAt": "2026-10-19T03:54:48.591Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1.12rem",
+        "createdAt": "2026-10-19T03:54:48.668Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": ".7rem",
+        "createdAt": "2026-10-19T03:54:48.741Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1.18rem",
+        "createdAt": "2026-10-19T03:54:48.821Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1.35rem",
+        "createdAt": "2026-10-19T03:54:48.896Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1.15rem",
+        "createdAt": "2026-10-19T03:54:48.972Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": ".94rem",
+        "createdAt": "2026-10-19T03:54:49.048Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "2.2rem",
+        "createdAt": "2026-10-19T03:54:49.125Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "4.4rem",
+        "createdAt": "2026-10-19T03:54:49.200Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": ".875rem",
+        "createdAt": "2026-10-19T03:54:49.274Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": ".92rem",
+        "createdAt": "2026-10-19T03:54:49.350Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1.4rem",
+        "createdAt": "2026-10-19T03:54:49.426Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "clamp(2.2rem,10vw,4.4rem)",
+        "createdAt": "2026-10-19T03:54:49.500Z",
+        "reason": "Claude: value ships in index.html, which DESIGN.md was derived from after the build; documenter left one-offs off the scale, not drift"
       }
     ]
   }
