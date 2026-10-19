@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>One Of A Kind Pro Painting &amp; Small Repairs LLC</title>
+<meta name="description" content="Painting and small repairs, inside and out, for homes, businesses and rentals. Quality work, honest service, affordable solutions. Free estimates: 337-458-6145.">
+<meta name="theme-color" content="#162c6e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="One Of A Kind Pro Painting &amp; Small Repairs LLC">
+<meta property="og:description" content="A fresh start looks good here. Painting and small repairs, inside and out. Get your free estimate.">
+<meta property="og:url" content="https://10elizabethbell.github.io/oneOfAKindProPainting/">
+<meta property="og:image" content="https://10elizabethbell.github.io/oneOfAKindProPainting/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23162c6e'/%3E%3Cpath d='M16 14l2.2-7 3.6 4.4L24 5l2.2 6.4L29.8 7l2.2 7z' fill='%23e3b445'/%3E%3Cpath d='M7 29l17-13 17 13' fill='none' stroke='%23e3b445' stroke-width='4.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13 27v13h22V27' fill='none' stroke='%23fff' stroke-width='3.5' stroke-linejoin='round'/%3E%3Crect x='21' y='29' width='6' height='6' rx='1' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+/* ---------- tokens ---------- */
+:root{
+  --navy:#162c6e;          /* the flyer's royal navy: page ground, fresh paint */
+  --navy-2:#10225a;
+  --gold:#e3b445;          /* trim, primary buttons */
+  --gold-2:#c99a2e;
+  --white:#f5f6fa;         /* fresh ceiling white: reading sections */
+  --paper:#ffffff;
+  --ink:#14214d;
+  --ink-2:#45507a;
+  --on-navy:#e9edf8;
+  --on-navy-2:#b9c3e2;
+  --accent:#2f5fe0;        /* form hover/focus outline (stands apart from the navy button fill) */
+  --wall:#d5cab1;
+  --sys:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --gutter:16px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;overscroll-behavior-y:none}
+body{margin:0;background:var(--white);color:var(--ink);font:400 17px/1.55 var(--sys);-webkit-font-smoothing:antialiased}
+::selection{background:var(--gold);color:var(--navy-2)}
+a{color:inherit;text-underline-offset:.2em}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+img,svg{display:block}
+.skip{position:absolute;left:-999px;top:8px;z-index:20;background:var(--gold);color:var(--navy-2);padding:10px 14px;border-radius:8px;font-weight:700}
+.skip:focus{left:8px}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{font-weight:900;text-transform:uppercase;letter-spacing:-.01em;line-height:1;margin:0;text-wrap:balance}
+h2{font-size:clamp(2rem,9vw,3.6rem)}
+p{margin:0}
+
+/* ---------- buttons ---------- */
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;border:2px solid transparent;font:800 1.02rem/1 var(--sys);letter-spacing:.02em;text-decoration:none;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .15s}
+.btn:active{transform:translateY(1px)}
+.btn--gold{background:var(--gold);border-color:var(--gold);color:var(--navy-2)}
+.btn--gold:hover{background:#efc560;border-color:#efc560}
+.btn--line{border-color:var(--on-navy);color:var(--paper);background:transparent}
+.btn--line:hover{background:rgba(255,255,255,.1)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* ---------- hero: the wall ---------- */
+.hero{position:relative;min-height:min(100svh,900px);background:var(--navy);color:var(--paper);padding-bottom:270px;overflow:hidden;isolation:isolate}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.wall-zone{position:absolute;z-index:1;touch-action:none;-webkit-user-select:none;user-select:none;cursor:none}
+.wall-hint{position:absolute;left:14px;bottom:12px;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5c4a30;pointer-events:none;transition:opacity .6s}
+.wall-hint.gone{opacity:0}
+.top{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px var(--gutter);max-width:1440px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;min-height:48px}
+.brand svg{width:40px;height:40px;flex:none}
+.brand b{display:block;white-space:nowrap;font-style:italic;font-weight:900;font-size:1.12rem;line-height:1;letter-spacing:-.01em}
+.brand small{display:block;margin-top:3px;font-size:.58rem;font-weight:800;letter-spacing:.1em;line-height:1.25;text-transform:uppercase;color:var(--gold)}
+.tel{flex:none;display:flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font-weight:800;font-size:.98rem;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tel svg{width:18px;height:18px;color:var(--gold)}
+.tel:hover{color:var(--gold)}
+.hero-copy{position:relative;z-index:2;padding:26px var(--gutter) 0;max-width:640px}
+.hero h1{font-size:clamp(2.6rem,11.6vw,5.6rem);letter-spacing:-.025em;line-height:.94}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.promise{margin-top:18px;font-size:clamp(1.02rem,4.6vw,1.25rem);font-weight:600;color:var(--on-navy);max-width:30ch}
+.actions{display:grid;gap:12px;margin-top:26px}
+
+/* ---------- section edges: ragged roller ends + drips ---------- */
+.edge{position:absolute;left:0;right:0;height:26px;color:var(--navy);pointer-events:none;z-index:1}
+.edge svg{width:100%;height:100%;overflow:visible}
+.edge--up{bottom:calc(100% - 1px)}
+.edge--down{top:calc(100% - 1px)}
+.drip{position:absolute;top:18px;width:var(--w,6px);height:0;background:var(--navy);border-radius:0 0 3px 3px;transition:height var(--t,2.8s) cubic-bezier(.22,.7,.2,1) var(--d,0s)}
+.drip::after{content:"";position:absolute;left:50%;bottom:calc(var(--w,6px) * -.55);width:calc(var(--w,6px) * 1.7);height:calc(var(--w,6px) * 1.9);transform:translateX(-50%);background:inherit;border-radius:50% 50% 50% 50% / 42% 42% 58% 58%}
+.edge.on .drip{height:var(--len)}
+
+/* ---------- services ---------- */
+.services{padding:72px 0 96px}
+.services h2{color:var(--navy)}
+.rows{list-style:none;margin:30px 0 0;padding:0;border-top:2px solid rgba(22,44,110,.14)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:12px 0;border-bottom:2px solid rgba(22,44,110,.14);text-decoration:none;font-weight:900;text-transform:uppercase;font-size:clamp(1.25rem,6vw,1.9rem);letter-spacing:-.005em;color:var(--ink)}
+.row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
+.arrow{display:grid;place-items:center;width:46px;height:46px;flex:none;border-radius:50%;background:rgba(22,44,110,.08);color:var(--navy);transition:background-color .2s,color .2s}
+.arrow svg{width:20px;height:20px}
+.row:hover .arrow,.row:focus-visible .arrow{background:var(--gold);color:var(--navy-2)}
+.row:focus-visible .arrow{outline:3px solid var(--gold);outline-offset:3px}
+.for{margin-top:18px;font-weight:600;color:var(--ink-2)}
+
+/* ---------- care ---------- */
+.care{position:relative;background:var(--navy);color:var(--on-navy);padding:64px 0 88px;z-index:1}
+.care h2{color:var(--paper)}
+.care h2 span{color:var(--gold)}
+.care p{margin-top:22px;font-size:1.12rem;max-width:58ch}
+.care .btn{margin-top:30px;width:100%}
+
+/* ---------- steps ---------- */
+.steps{padding:120px 0 40px}
+.steps h2{color:var(--navy)}
+.steps ol{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:26px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 14px;counter-increment:s}
+.steps li::before{content:counter(s);grid-row:span 2;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--navy);color:var(--gold);font-weight:900;font-size:1.35rem}
+.steps h3{font-size:1.2rem;align-self:end;padding-top:4px}
+.steps li p{color:var(--ink-2)}
+
+/* ---------- estimate form ---------- */
+.estimate{padding:64px 0 120px}
+.estimate h2{color:var(--navy)}
+form{margin-top:28px;display:grid;gap:22px;max-width:640px}
+.field{display:grid;gap:8px}
+label,.legend{font-weight:800;font-size:.98rem;color:var(--ink)}
+.opt{font-weight:500;color:var(--ink-2)}
+input[type=text],input[type=tel],textarea{width:100%;min-height:54px;padding:14px 16px;border:2px solid rgba(22,44,110,.22);border-radius:12px;background:var(--paper);color:var(--ink);font:500 17px/1.4 var(--sys);caret-color:var(--navy);transition:border-color .15s,outline-color .15s}
+textarea{min-height:120px;resize:vertical}
+::placeholder{color:#717a9c}
+input:hover,textarea:hover,input:focus,textarea:focus{outline:3px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+fieldset{border:0;margin:0;padding:0;display:grid;gap:10px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.chip span{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 18px;border:2px solid rgba(22,44,110,.22);border-radius:999px;background:var(--paper);font-weight:700;cursor:pointer;transition:background-color .15s,color .15s,border-color .15s}
+.chip span::before{content:"";width:16px;height:16px;border-radius:50%;border:2px solid currentColor;opacity:.45;flex:none}
+.chip input:checked+span{background:var(--navy);border-color:var(--navy);color:var(--paper)}
+.chip input:checked+span::before{background:var(--gold);border-color:var(--gold);opacity:1}
+.chip span:hover,.chip input:focus-visible+span{outline:3px solid var(--accent);outline-offset:1px}
+.err{display:none;color:#b3261e;font-weight:600;font-size:.95rem}
+.field.bad .err{display:block}
+.field.bad input,.field.bad textarea{border-color:#b3261e}
+.send{width:100%;border:0;background:var(--navy);color:var(--paper)}
+.send:hover{background:var(--navy-2)}
+.send:hover,.send:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.note{color:var(--ink-2);font-size:.98rem}
+.note a{font-weight:800;color:var(--navy);white-space:nowrap}
+.fallback{display:none;margin-top:4px;padding:18px;border-radius:14px;background:rgba(22,44,110,.06)}
+.fallback.on{display:grid;gap:12px}
+.fallback pre{margin:0;white-space:pre-wrap;font:500 .98rem/1.5 var(--sys);color:var(--ink)}
+.copy{justify-self:start;min-height:44px;padding:0 18px;border:2px solid var(--navy);border-radius:999px;background:transparent;color:var(--navy);font:800 .95rem var(--sys);cursor:pointer}
+.copy:hover,.copy:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* ---------- footer: the close ---------- */
+footer{position:relative;background:var(--navy);color:var(--on-navy);padding:70px 0 40px}
+footer h2{color:var(--paper);font-size:clamp(2.2rem,10vw,4.4rem)}
+footer h2 span{color:var(--gold)}
+.foot{margin-top:36px;display:grid;gap:6px;font-size:1.02rem}
+.foot strong{color:var(--paper);font-weight:800}
+.foot a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--paper);word-break:break-word}
+.foot a:hover{color:var(--gold)}
+.fine{margin-top:30px;font-size:.88rem;color:var(--on-navy-2)}
+
+/* ---------- desktop ---------- */
+@media (max-width:380px){
+  .brand{gap:7px}
+  .brand svg{width:34px;height:34px}
+  .brand b{font-size:1.02rem}
+  .tel{font-size:.92rem;gap:5px}
+  .tel svg{width:16px;height:16px}
+}
+@media (min-width:600px){
+  .actions{grid-template-columns:auto auto;justify-content:start}
+  .care .btn{width:auto;display:inline-flex}
+}
+@media (min-width:900px){
+  :root{--gutter:40px}
+  .hero{height:clamp(660px,100svh,920px);min-height:0;padding-bottom:0}
+  .top{padding-top:18px}
+  .brand svg{width:48px;height:48px}
+  .brand b{font-size:1.4rem}
+  .brand small{font-size:.68rem}
+  .tel{font-size:1.15rem}
+  .hero-copy{padding-top:9vh;max-width:min(46vw,640px)}
+  .promise{font-size:1.25rem}
+  .services .wrap{display:grid;grid-template-columns:5fr 7fr;gap:64px;align-items:start}
+  .services{padding:120px 0}
+  .rows{margin-top:6px}
+  .row{min-height:92px}
+  .care{padding:96px 0 120px}
+  .care .wrap{display:grid;grid-template-columns:6fr 5fr;gap:64px;align-items:end}
+  .care p{margin-top:0}
+  .steps{padding:150px 0 40px}
+  .steps ol{grid-template-columns:repeat(3,1fr);gap:40px}
+  .estimate .wrap{display:grid;grid-template-columns:5fr 7fr;gap:64px}
+  form{margin-top:6px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .drip{transition:none}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: The fresh start, done in front of you. A tired wall (scuffs, a crack, nail holes, the ghost of an old frame) gets rolled over in the flyer's royal navy while you watch, and your finger takes the roller. Refuses the painter template: stock living-room photo, icon-card services grid, testimonial carousel.
+OWN-WORLD: Royal navy paint with roller stipple, gold trim (crown, handle, buttons), ceiling-white reading sections, ragged roller ends with drips at every section edge, a white baseboard closing the hero. Heavy uppercase system type.
+STORY: This crew makes tired spaces look new and treats your place with care → here's what they do → how a free estimate works → send the request by text now.
+FIRST VIEWPORT: Header (crown-house mark + name left, tap-to-call number top right). Headline "A fresh start looks good here." on painted navy, promise line, gold "Get my free estimate" + outlined "Text us a photo". Below on phones (right on desktop): the old wall with the roller working it, baseboard at the bottom.
+FORM: Live roller canvas over a procedurally aged wall; 1st of 6 (runner-up: painter's tape peel). Seed: pitch-site unattended, code-led.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<a class="skip" href="#estimate">Skip to the free estimate</a>
+
+<header class="hero" id="top">
+  <canvas id="wall" aria-hidden="true"></canvas>
+  <div class="wall-zone" aria-hidden="true"><span class="wall-hint">Drag to roll on a fresh coat</span></div>
+  <div class="top">
+    <a class="brand" href="#top" aria-label="One Of A Kind Pro Painting &amp; Small Repairs LLC, home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M16 14l2.2-7 3.6 4.4L24 5l2.2 6.4L29.8 7l2.2 7z" fill="#e3b445"/><path d="M7 29l17-13 17 13" fill="none" stroke="#e3b445" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 27v13h22V27" fill="none" stroke="#fff" stroke-width="3.5" stroke-linejoin="round"/><rect x="21" y="29" width="6" height="6" rx="1" fill="#fff"/></svg>
+      <span><b>One Of A Kind</b><small>Pro Painting<br>&amp; Small Repairs</small></span>
+    </a>
+    <a class="tel" href="tel:+13374586145"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>337-458-6145</a>
+  </div>
+  <div class="hero-copy">
+    <h1>A fresh start looks <em>good here.</em></h1>
+    <p class="promise">Quality work, honest service, affordable solutions.</p>
+    <div class="actions">
+      <a class="btn btn--gold" href="#estimate">Get my free estimate</a>
+      <a class="btn btn--line" id="textPhoto" href="sms:+13374586145?&amp;body=Hi%20One%20Of%20A%20Kind!%20Here%20are%20some%20photos%20of%20the%20space%20I%27d%20like%20an%20estimate%20for%3A">Text us a photo</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <div>
+        <h2 id="svc-h">Paint. Repair. Improve. Repeat.</h2>
+      </div>
+      <div>
+        <ul class="rows">
+          <li><a class="row" href="#estimate" data-service="Interior painting">Interior painting<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li><a class="row" href="#estimate" data-service="Exterior painting">Exterior painting<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li><a class="row" href="#estimate" data-service="Small repairs">Small repairs<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+        </ul>
+        <p class="for">For homes, businesses, rentals &amp; more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="care" aria-labelledby="care-h">
+    <div class="edge edge--up" aria-hidden="true"></div>
+    <div class="wrap">
+      <h2 id="care-h">Details make <span>the difference.</span></h2>
+      <div>
+        <p>The room you wake up in, the shop your customers walk into, the rental that needs to be ready for the next family: we treat it like it's our own. Holes get patched before anything gets painted, lines get cut clean, and you get an honest price for honest work.</p>
+        <a class="btn btn--line" href="https://www.facebook.com/OneOfAKindProPainting"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46h1.6V4.46A21 21 0 0 0 14.3 4.3c-2.3 0-3.8 1.4-3.8 3.95v2.25H8v3h2.5V21z"/></svg>Click to see more of our work</a>
+      </div>
+    </div>
+    <div class="edge edge--down" data-drips="4" aria-hidden="true"></div>
+  </section>
+
+  <section class="steps" aria-labelledby="steps-h">
+    <div class="wrap">
+      <h2 id="steps-h">How your free estimate works</h2>
+      <ol>
+        <li><h3>Tell us what needs doing</h3><p>Fill in the form below, or text us photos of the space.</p></li>
+        <li><h3>Get your estimate</h3><p>We look it over and get back to you with a price. It costs you nothing.</p></li>
+        <li><h3>We get it done right</h3><p>We paint and repair with care for your space, down to the last detail.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="estimate" id="estimate" aria-labelledby="est-h">
+    <div class="wrap">
+      <div>
+        <h2 id="est-h">Get your free estimate</h2>
+      </div>
+      <form id="estForm" novalidate>
+        <div class="field" id="f-name">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <span class="err" role="alert">Please add your name so we know who's texting.</span>
+        </div>
+        <fieldset>
+          <legend class="legend">What do you need? <span class="opt">(pick any)</span></legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="svc" value="Interior painting"><span>Interior painting</span></label>
+            <label class="chip"><input type="checkbox" name="svc" value="Exterior painting"><span>Exterior painting</span></label>
+            <label class="chip"><input type="checkbox" name="svc" value="Small repairs"><span>Small repairs</span></label>
+            <label class="chip"><input type="checkbox" name="svc" value="Something else"><span>Something else</span></label>
+          </div>
+        </fieldset>
+        <div class="field" id="f-job">
+          <label for="job">Tell us about the job</label>
+          <textarea id="job" name="job" placeholder="e.g. Two bedrooms and a hallway, a few holes to patch first" required></textarea>
+          <span class="err" role="alert">A line or two about the job helps us price it.</span>
+        </div>
+        <div class="field">
+          <label for="where">Where is the job? <span class="opt">(town or zip)</span></label>
+          <input id="where" name="where" type="text" autocomplete="address-level2">
+        </div>
+        <div class="field">
+          <label for="when">When would you like it done? <span class="opt">(optional)</span></label>
+          <input id="when" name="when" type="text" placeholder="e.g. Before the end of the month">
+        </div>
+        <button class="btn send" type="submit">Text my estimate request</button>
+        <p class="note">This opens your messages with everything filled in. Add photos of the space before you send. Rather talk? Call <a href="tel:+13374586145">337-458-6145</a>.</p>
+        <div class="fallback" id="fallback" aria-live="polite">
+          <p class="note"><strong>Messages didn't open?</strong> Text this to 337-458-6145:</p>
+          <pre id="msgOut"></pre>
+          <button class="copy" type="button" id="copyBtn">Copy message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="edge edge--up" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2>One of a kind. <span>Inside and out.</span></h2>
+    <div class="foot">
+      <strong>One Of A Kind Pro Painting &amp; Small Repairs LLC</strong>
+      <a href="tel:+13374586145">337-458-6145</a>
+      <a href="mailto:oneofakindpropaintingllc@gmail.com">oneofakindpropaintingllc@gmail.com</a>
+      <a href="https://www.facebook.com/OneOfAKindProPainting">Facebook: @OneOfAKindProPainting</a>
+    </div>
+    <p class="fine">&copy; <span id="yr">2026</span> One Of A Kind Pro Painting &amp; Small Repairs LLC</p>
+  </div>
+</footer>
+
+<script>
+/* ===== Hero wall: an old wall, a roller, a fresh coat ===== */
+(function(){
+  'use strict';
+  // ---- tunables ----
+  var ROLLER_LEN = [92, 150],  // roller length in css px: phone, desktop
+      ROLLER_DIA = 0.30,       // cover diameter as a share of its length
+      AUTO_SPEED = 300,        // autopilot peak speed, px/s
+      STAMP_H = 9,             // footprint of one roller contact, px
+      STAMP_STEP = 2,          // px between stamps along a stroke
+      STAMP_ALPHA = 0.85,      // paint laid per stamp at full load
+      LOAD_PER_PX = 1/1500,    // how fast the roller runs dry
+      USER_LOAD_FLOOR = 0.42,  // a visitor's roller never goes fully dry
+      RELOAD_TIME = 0.7,       // autopilot pause to reload, s
+      DRIP_CHANCE = 0.0035,    // per stamp, on a loaded roller moving down
+      IDLE_RESUME = 2600,      // ms after the last touch before autopilot resumes
+      RESET_AT = 0.9,          // wall coverage that starts the next wall
+      RESET_HOLD = 1.6, RESET_FADE = 1.1, // s
+      FOLLOW = 16,             // how tightly the roller follows its target
+      PAINT = '#162c6e', DRY = '#e6dfcf';
+
+  var hero = document.querySelector('.hero'), cv = document.getElementById('wall');
+  if (!hero || !cv || !cv.getContext) return;
+  var ctx = cv.getContext('2d'),
+      zoneEl = hero.querySelector('.wall-zone'), copy = hero.querySelector('.hero-copy'),
+      head = hero.querySelector('.top'), hint = hero.querySelector('.wall-hint');
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var W = 0, H = 0, dpr = 1, RL = 92, RD = 28, BASE_H = 22, zone = null;
+  var base, mask, mctx, tex, paint, pctx, over, prev, sprite, nap, probe, pbx;
+  var seed = 7;
+  function rnd(){ seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
+  function mk(w, h){ var c = document.createElement('canvas'); c.width = Math.max(1, w); c.height = Math.max(1, h); return c; }
+  function clamp(v, a, b){ return v < a ? a : v > b ? b : v; }
+  function hex(h){ return [parseInt(h.substr(1,2),16), parseInt(h.substr(3,2),16), parseInt(h.substr(5,2),16)]; }
+  function mix(a, b, t){ var A = hex(a), B = hex(b); return 'rgb(' + Math.round(A[0]+(B[0]-A[0])*t) + ',' + Math.round(A[1]+(B[1]-A[1])*t) + ',' + Math.round(A[2]+(B[2]-A[2])*t) + ')'; }
+
+  // roller state
+  var R = { x: 0, y: 0, tx: 0, ty: 0, px: 0, py: 0, tilt: 0, load: 1, lift: 1, painting: false, travel: true };
+  var auto = { phase: 0, pause: 0 };
+  var ptr = { cx: 0, cy: 0, active: false, touch: false, last: -1e9 };
+  var drips = [], fade = 0, coverT = 0, resetIn = -1, touchedOnce = false;
+
+  /* -- sizing: rebuild only when the hero's rounded size really changes -- */
+  function setup(){
+    var r = hero.getBoundingClientRect(), w = Math.round(r.width), h = Math.round(r.height);
+    if (!w || !h || (w === W && h === H)) return false;
+    W = w; H = h; dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    var desk = W >= 900;
+    RL = desk ? ROLLER_LEN[1] : ROLLER_LEN[0]; RD = RL * ROLLER_DIA; BASE_H = desk ? 34 : 22;
+    var hb = head.getBoundingClientRect(), cb = copy.getBoundingClientRect();
+    if (desk) zone = { x: Math.round(cb.right - r.left + 56), y: Math.round(hb.bottom - r.top + 18) };
+    else zone = { x: 0, y: Math.round(cb.bottom - r.top + 30) };
+    zone.w = W - zone.x; zone.h = H - BASE_H - zone.y;
+    zoneEl.style.left = zone.x + 'px'; zoneEl.style.top = zone.y + 'px';
+    zoneEl.style.width = zone.w + 'px'; zoneEl.style.height = zone.h + 'px';
+    var cw = cv.width, ch = cv.height;
+    base = mk(cw, ch); mask = mk(cw, ch); mctx = mask.getContext('2d');
+    paint = mk(cw, ch); pctx = paint.getContext('2d'); over = mk(cw, ch); prev = mk(cw, ch);
+    makeSprite(); makeTexture(); makeNap(); drawBase(); drawOver(); prepaint();
+    pbx = { w: 48, h: Math.max(8, Math.round(48 * zone.h / Math.max(1, zone.w))) }; probe = mk(pbx.w, pbx.h);
+    R.x = R.tx = R.px = zone.x + RL / 2 + 8; R.y = R.ty = R.py = zone.y + RD + 10;
+    auto.phase = 0; drips = []; fade = 0; resetIn = -1;
+    dirty = true;
+    return true;
+  }
+
+  /* -- the roller's footprint: streaky nap, heavier at the ends (tram lines) -- */
+  function makeSprite(){
+    var sw = Math.round(RL * dpr), sh = Math.max(2, Math.round(STAMP_H * dpr));
+    sprite = mk(sw, sh);
+    var g = sprite.getContext('2d'), id = g.createImageData(sw, sh), d = id.data, cols = [], v = 0.8, x, y;
+    for (x = 0; x < sw; x++){ v = clamp(v + (rnd() - 0.5) * 0.18, 0.68, 1); cols[x] = v; }
+    for (x = 1; x < sw - 1; x++) cols[x] = (cols[x-1] + cols[x] * 2 + cols[x+1]) / 4;
+    var fall = 2.5 * dpr, tram = 5 * dpr;
+    for (y = 0; y < sh; y++){
+      var ey = clamp(Math.min(y, sh - 1 - y) / (sh * 0.32), 0, 1);
+      for (x = 0; x < sw; x++){
+        var e = Math.min(x, sw - 1 - x), ex = clamp(e / fall, 0, 1), t = e > fall && e < tram ? 1.12 : 1;
+        var a = cols[x] * ex * ey * t * (0.9 + 0.2 * rnd());
+        var i = (y * sw + x) * 4; d[i] = d[i+1] = d[i+2] = 255; d[i+3] = clamp(a, 0, 1) * 255;
+      }
+    }
+    g.putImageData(id, 0, 0);
+  }
+
+  /* -- fresh navy with a fine roller stipple -- */
+  function makeTexture(){
+    tex = mk(cv.width, cv.height);
+    var g = tex.getContext('2d'), id = g.createImageData(tex.width, tex.height), d = id.data, c = hex(PAINT), cols = [], x, v = 0;
+    for (x = 0; x < tex.width; x++){ v = clamp(v + (rnd() - 0.5) * 0.6, -3, 3); cols[x] = v; }
+    for (var i = 0, n = d.length / 4; i < n; i++){
+      var k = (rnd() - 0.5) * 9 + cols[i % tex.width];
+      d[i*4] = c[0] + k; d[i*4+1] = c[1] + k; d[i*4+2] = c[2] + k * 1.2; d[i*4+3] = 255;
+    }
+    g.putImageData(id, 0, 0);
+  }
+
+  function makeNap(){
+    nap = mk(Math.round(RL * dpr), Math.round(RD * dpr));
+    var g = nap.getContext('2d'), n = Math.round(RL * RD * 0.9);
+    g.scale(dpr, dpr);
+    for (var i = 0; i < n; i++){
+      g.fillStyle = rnd() < 0.5 ? 'rgba(0,0,20,.16)' : 'rgba(255,255,255,.10)';
+      g.fillRect(rnd() * RL, rnd() * RD, 0.9, 1.6 + rnd() * 1.6);
+    }
+  }
+
+  /* -- the old wall: yellowed, scuffed, cracked, holes, an old frame's ghost -- */
+  function drawBase(){
+    var b = base.getContext('2d'), Z = zone, i;
+    b.setTransform(dpr, 0, 0, dpr, 0, 0);
+    b.fillStyle = '#d5cab1'; b.fillRect(0, 0, W, H);
+    for (i = 0; i < 8; i++){
+      var gx = Z.x + rnd() * Z.w, gy = Z.y + rnd() * Z.h, gr = 80 + rnd() * 220;
+      var gg = b.createRadialGradient(gx, gy, 0, gx, gy, gr);
+      gg.addColorStop(0, rnd() < 0.55 ? 'rgba(250,244,226,.30)' : 'rgba(150,124,86,.13)'); gg.addColorStop(1, 'rgba(0,0,0,0)');
+      b.fillStyle = gg; b.fillRect(gx - gr, gy - gr, gr * 2, gr * 2);
+    }
+    // where a frame hung for years: cleaner paint, a dusty outline, the nail above it
+    if (Z.w > 200 && Z.h > 150){
+      var fw = Math.min(Z.w * 0.38, 230), fh = fw * 0.74;
+      var fx = Z.x + 26 + rnd() * Math.max(0, Z.w - fw - 52), fy = Z.y + 34 + rnd() * Math.max(0, (Z.h - fh - 70) * 0.6);
+      b.save(); b.shadowColor = 'rgba(105,84,52,.45)'; b.shadowBlur = 7;
+      b.strokeStyle = 'rgba(140,116,80,.16)'; b.lineWidth = 3; b.strokeRect(fx, fy, fw, fh); b.restore();
+      b.fillStyle = 'rgba(236,229,210,.85)'; b.fillRect(fx, fy, fw, fh);
+      hole(b, fx + fw / 2, fy - 14, 2.2);
+    }
+    for (i = 0; i < 4; i++) hole(b, Z.x + 20 + rnd() * (Z.w - 40), Z.y + 20 + rnd() * (Z.h - 40), 1.5 + rnd());
+    // spackle patches nobody painted over
+    for (i = 0; i < 2; i++){
+      var sx = Z.x + 30 + rnd() * (Z.w - 60), sy = Z.y + 30 + rnd() * (Z.h - 60), s = 9 + rnd() * 9;
+      for (var k = 0; k < 26; k++){
+        var a = rnd() * 6.283, d = rnd() * s * 0.7;
+        b.fillStyle = 'rgba(243,240,231,' + (0.35 + rnd() * 0.4) + ')';
+        b.beginPath(); b.arc(sx + Math.cos(a) * d, sy + Math.sin(a) * d * 0.8, s * (0.25 + rnd() * 0.35), 0, 6.283); b.fill();
+      }
+    }
+    // scuffs low on the wall
+    b.lineCap = 'round';
+    for (i = 0; i < 6; i++){
+      var x0 = Z.x + rnd() * Z.w, y0 = Z.y + Z.h * (0.55 + rnd() * 0.42), len = 18 + rnd() * 46;
+      b.strokeStyle = 'rgba(64,54,44,' + (0.12 + rnd() * 0.16) + ')'; b.lineWidth = 1.5 + rnd() * 3.5;
+      b.beginPath(); b.moveTo(x0, y0); b.quadraticCurveTo(x0 + len * 0.5, y0 - 4 + rnd() * 8, x0 + len, y0 + (rnd() - 0.5) * 10); b.stroke();
+    }
+    crack(b, Z.x + Z.w * (0.15 + rnd() * 0.6), Z.y + 2, 70 + rnd() * 110, 1.1 + rnd() * 0.5);
+    // a water ring on wide walls
+    if (Z.w > 500){
+      var wx = Z.x + Z.w * (0.6 + rnd() * 0.3), wy = Z.y + 40 + rnd() * 50, wr = 26 + rnd() * 18;
+      b.fillStyle = 'rgba(176,134,72,.07)'; b.strokeStyle = 'rgba(150,108,58,.20)'; b.lineWidth = 2;
+      b.beginPath();
+      for (i = 0; i <= 40; i++){ var an = i / 40 * 6.283, rr = wr * (1 + 0.12 * Math.sin(an * 3 + wx) + 0.06 * Math.sin(an * 7)); b[i ? 'lineTo' : 'moveTo'](wx + Math.cos(an) * rr, wy + Math.sin(an) * rr * 0.85); }
+      b.fill(); b.stroke();
+    }
+    // plaster grain
+    b.setTransform(1, 0, 0, 1, 0, 0);
+    var id = b.getImageData(0, 0, base.width, base.height), dd = id.data;
+    for (i = 0; i < dd.length; i += 4){ var n = (rnd() - 0.5) * 14; dd[i] += n; dd[i+1] += n; dd[i+2] += n; }
+    b.putImageData(id, 0, 0);
+  }
+  function hole(b, x, y, r){
+    b.fillStyle = 'rgba(120,96,66,.28)'; b.beginPath(); b.arc(x + 0.6, y + 0.8, r + 1.4, 0, 6.283); b.fill();
+    b.fillStyle = 'rgba(52,40,28,.9)'; b.beginPath(); b.arc(x, y, r, 0, 6.283); b.fill();
+  }
+  function crack(b, x, y, len, w){
+    var pts = [[x, y]], a = 1.3 + rnd() * 0.6, l = 0;
+    while (l < len){ a += (rnd() - 0.5) * 0.9; a = clamp(a, 0.5, 2.4); var s = 3 + rnd() * 6; x += Math.cos(a) * s; y += Math.sin(a) * s; l += s; pts.push([x, y]); }
+    function line(dx, dy, col, lw){ b.strokeStyle = col; b.lineWidth = lw; b.beginPath(); pts.forEach(function(p, i){ b[i ? 'lineTo' : 'moveTo'](p[0] + dx, p[1] + dy); }); b.stroke(); }
+    b.lineJoin = 'round';
+    line(0.9, 0.9, 'rgba(255,252,240,.45)', w);
+    line(0, 0, 'rgba(58,46,34,.62)', w);
+    if (pts.length > 8){
+      var p = pts[Math.floor(pts.length * 0.45)]; var bx = p[0], by = p[1], ba = a + 0.9;
+      b.beginPath(); b.moveTo(bx, by);
+      for (var i = 0; i < 6; i++){ ba += (rnd() - 0.5) * 0.8; bx += Math.cos(ba) * 4; by += Math.sin(ba) * 4; b.lineTo(bx, by); }
+      b.lineWidth = w * 0.7; b.stroke();
+    }
+  }
+
+  /* -- things that sit on top of the paint: the baseboard, an outlet -- */
+  function drawOver(){
+    var o = over.getContext('2d'); o.setTransform(dpr, 0, 0, dpr, 0, 0); o.clearRect(0, 0, W, H);
+    var y = H - BASE_H;
+    var sh = o.createLinearGradient(0, y - 6, 0, y); sh.addColorStop(0, 'rgba(10,16,40,0)'); sh.addColorStop(1, 'rgba(10,16,40,.22)');
+    o.fillStyle = sh; o.fillRect(0, y - 6, W, 6);
+    var g = o.createLinearGradient(0, y, 0, H); g.addColorStop(0, '#fbfaf6'); g.addColorStop(0.18, '#ecE8de'); g.addColorStop(0.24, '#f7f5ef'); g.addColorStop(1, '#e4dfd3');
+    o.fillStyle = g; o.fillRect(0, y, W, BASE_H);
+    o.fillStyle = 'rgba(70,60,50,.18)';
+    for (var i = 0; i < 5; i++) o.fillRect(rnd() * W, y + BASE_H * (0.45 + rnd() * 0.4), 10 + rnd() * 30, 1.5);
+    if (zone.w > 520){
+      var px = zone.x + zone.w * 0.8, py = y - 74, pw = 30, ph = 46;
+      o.save(); o.shadowColor = 'rgba(30,24,16,.25)'; o.shadowBlur = 5; o.shadowOffsetY = 2;
+      o.fillStyle = '#efebe1'; roundRect(o, px, py, pw, ph, 3); o.fill(); o.restore();
+      [py + 8, py + 26].forEach(function(sy){
+        o.fillStyle = '#e2ddd1'; roundRect(o, px + 7, sy, 16, 12, 5); o.fill();
+        o.fillStyle = '#5a5246'; o.fillRect(px + 11, sy + 3, 1.6, 5); o.fillRect(px + 17.5, sy + 3, 1.6, 5);
+      });
+      o.fillStyle = '#b9b2a3'; o.beginPath(); o.arc(px + pw / 2, py + ph / 2 - 0.5, 1.6, 0, 6.283); o.fill();
+    }
+  }
+  function roundRect(g, x, y, w, h, r){ g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r); g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath(); }
+
+  /* -- the part that's already painted, behind the words -- */
+  function prepaint(){
+    mctx.setTransform(1, 0, 0, 1, 0, 0); mctx.clearRect(0, 0, mask.width, mask.height);
+    mctx.globalAlpha = 1; mctx.fillStyle = '#fff';
+    var edgeY = zone.y - 6, x, y, p;
+    mctx.fillRect(0, 0, mask.width, Math.max(0, edgeY - 8) * dpr);
+    if (zone.x > 0) mctx.fillRect(0, 0, Math.max(0, zone.x - RL * 0.5) * dpr, mask.height);
+    // stroke ends along the bottom of the painted band, each roller width stopping at its own height
+    for (x = zone.x - RL * 0.2; x < W + RL; x += RL * 0.78){
+      var end = edgeY + (rnd() - 0.3) * 14;
+      for (p = 0; p < 3; p++) for (y = edgeY - 30; y < end; y += STAMP_STEP) stamp(x, y, 0.55);
+    }
+    if (zone.x > 0) for (p = 0; p < 3; p++) for (y = 0; y < H; y += STAMP_STEP) stamp(zone.x - RL * 0.5 + 4, y, 0.55);
+    dirty = true;
+  }
+
+  var dirty = true;
+  function stamp(x, y, a){
+    mctx.globalAlpha = a;
+    mctx.drawImage(sprite, (x - RL / 2) * dpr, (y - STAMP_H / 2) * dpr, RL * dpr, STAMP_H * dpr);
+  }
+
+  function rollTo(x0, y0, x1, y1){
+    var dx = x1 - x0, dy = y1 - y0, dist = Math.sqrt(dx * dx + dy * dy);
+    if (dist < 0.3) return;
+    var n = Math.ceil(dist / STAMP_STEP), a = STAMP_ALPHA * (0.4 + 0.6 * R.load);
+    for (var i = 1; i <= n; i++){
+      var t = i / n, x = x0 + dx * t, y = y0 + dy * t;
+      stamp(x, y, a * (0.94 + 0.12 * rnd()));
+      if (R.load > 0.72 && dy > 0 && rnd() < DRIP_CHANCE && drips.length < 14)
+        drips.push({ x: x + (rnd() - 0.5) * RL * 0.8, y: y + STAMP_H * 0.4, len: 0, max: 12 + rnd() * 34, w: 2.2 + rnd() * 1.8, v: 9 + rnd() * 12 });
+    }
+    R.load = Math.max(ptr.active ? USER_LOAD_FLOOR : 0, R.load - dist * LOAD_PER_PX);
+    dirty = true;
+  }
+
+  function drawDrip(g, d){
+    var w = d.w, x = d.x, y = d.y, L = d.len;
+    g.beginPath(); g.moveTo(x - w / 2, y); g.lineTo(x - w * 0.42, y + L);
+    g.arc(x, y + L, w * 0.85, Math.PI, 0, true); g.lineTo(x + w / 2, y); g.closePath(); g.fill();
+  }
+
+  /* -- compose the scene (no roller) into any 2d context -- */
+  function compose(g){
+    if (dirty){
+      pctx.globalCompositeOperation = 'copy'; pctx.drawImage(mask, 0, 0);
+      pctx.globalCompositeOperation = 'source-in'; pctx.drawImage(tex, 0, 0);
+      pctx.globalCompositeOperation = 'source-over'; dirty = false;
+    }
+    g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlpha = 1;
+    g.drawImage(base, 0, 0); g.drawImage(paint, 0, 0);
+    if (drips.length){ g.setTransform(dpr, 0, 0, dpr, 0, 0); g.fillStyle = '#18306f'; drips.forEach(function(d){ drawDrip(g, d); }); g.setTransform(1, 0, 0, 1, 0, 0); }
+    g.drawImage(over, 0, 0);
+  }
+
+  function drawRoller(){
+    var g = ctx, L = RL, D = RD, lift = R.lift;
+    g.setTransform(dpr, 0, 0, dpr, 0, 0);
+    g.save(); g.translate(R.x, R.y); g.rotate(R.tilt); g.scale(1 + lift * 0.035, 1 + lift * 0.035);
+    // frame: rod out of the right end, bent down to a gold handle
+    var rx = L / 2 + 9, hy = D / 2 + 26 + L * 0.12;
+    g.save();
+    g.shadowColor = 'rgba(8,14,40,.35)'; g.shadowBlur = 10 + lift * 8; g.shadowOffsetX = 3 + lift * 4; g.shadowOffsetY = 6 + lift * 8;
+    g.lineCap = 'round'; g.lineJoin = 'round';
+    g.strokeStyle = '#aab1bd'; g.lineWidth = Math.max(3, L * 0.03);
+    g.beginPath(); g.moveTo(L / 2 - 2, 0); g.lineTo(rx, 0); g.lineTo(rx, D / 2 + 10); g.lineTo(L * 0.08, hy); g.stroke();
+    g.strokeStyle = '#8b93a1'; g.lineWidth = Math.max(5, L * 0.05); g.beginPath(); g.moveTo(L * 0.08, hy); g.lineTo(L * 0.06, hy + 8); g.stroke();
+    var hg = g.createLinearGradient(-8, 0, 10, 0); hg.addColorStop(0, '#f2cd6c'); hg.addColorStop(0.5, '#e3b445'); hg.addColorStop(1, '#a87b1f');
+    g.strokeStyle = hg; g.lineWidth = Math.max(10, L * 0.1);
+    g.beginPath(); g.moveTo(L * 0.06, hy + 10); g.lineTo(L * 0.02, hy + 10 + L * 0.62); g.stroke();
+    // cover (casts the shadow too)
+    var col = mix(DRY, PAINT, clamp(R.load * 1.1, 0, 1));
+    g.fillStyle = col; roundRect(g, -L / 2, -D / 2, L, D, D * 0.32); g.fill();
+    g.restore();
+    g.save(); roundRect(g, -L / 2, -D / 2, L, D, D * 0.32); g.clip();
+    var cg = g.createLinearGradient(0, -D / 2, 0, D / 2);
+    cg.addColorStop(0, 'rgba(255,255,255,.22)'); cg.addColorStop(0.35, 'rgba(255,255,255,0)'); cg.addColorStop(0.7, 'rgba(0,0,20,.12)'); cg.addColorStop(1, 'rgba(0,0,20,.42)');
+    g.fillStyle = cg; g.fillRect(-L / 2, -D / 2, L, D);
+    g.drawImage(nap, -L / 2, -D / 2, L, D);
+    g.fillStyle = 'rgba(0,0,20,.25)'; g.fillRect(-L / 2, -D / 2, 3, D); g.fillRect(L / 2 - 3, -D / 2, 3, D);
+    g.restore();
+    g.restore();
+    g.setTransform(1, 0, 0, 1, 0, 0);
+  }
+
+  /* -- autopilot: a painter's W across the wall, reloading as it runs dry -- */
+  function autopilot(dt){
+    if (auto.pause > 0){
+      auto.pause -= dt; R.load = Math.min(1, R.load + dt / RELOAD_TIME); R.painting = false; return;
+    }
+    var amp = Math.max(20, (zone.h - RD - 18) / 2), mid = zone.y + zone.h / 2;
+    auto.phase += (AUTO_SPEED / Math.max(amp, 60)) * dt;
+    // straight up-and-down strokes, stepping over by most of a roller width at each turn
+    var k = auto.phase / Math.PI, n = Math.floor(k), f = k - n, sh = clamp((f - 0.9) / 0.1, 0, 1);
+    sh = sh * sh * (3 - 2 * sh);
+    var x = zone.x + RL / 2 + 8 + (n + sh) * RL * 0.72 + Math.sin(auto.phase * 0.9) * 2.5;
+    if (x > zone.x + zone.w - RL / 2 - 4){ auto.phase = 0; R.travel = true; x = zone.x + RL / 2 + 8; }
+    R.tx = x; R.ty = mid - Math.cos(auto.phase) * amp * (0.93 + 0.07 * Math.sin(auto.phase * 0.37));
+    R.painting = !R.travel && (sh === 0 || sh === 1); // lifted while stepping over
+    if (R.load < 0.3){ auto.pause = RELOAD_TIME; }
+  }
+
+  function coverage(){
+    var g = probe.getContext('2d');
+    g.clearRect(0, 0, pbx.w, pbx.h);
+    g.drawImage(mask, zone.x * dpr, zone.y * dpr, zone.w * dpr, zone.h * dpr, 0, 0, pbx.w, pbx.h);
+    var d = g.getImageData(0, 0, pbx.w, pbx.h).data, n = 0;
+    for (var i = 3; i < d.length; i += 4) if (d[i] > 170) n++;
+    return n / (pbx.w * pbx.h);
+  }
+
+  function nextWall(){
+    var p = prev.getContext('2d'); compose(p);
+    seed = (seed * 31 + 11) % 2147483647 || 3;
+    drawBase(); drawOver(); drips = []; prepaint();
+    fade = 1; auto.phase = 0; R.travel = true;
+  }
+
+  var running = false, visible = true, lt = 0;
+  function step(dt, now){
+    var userOn = ptr.active;
+    if (userOn){
+      var r = cv.getBoundingClientRect();
+      R.tx = ptr.cx - r.left; R.ty = ptr.cy - r.top - (ptr.touch ? RD * 1.3 : 0);
+      R.painting = true; R.travel = false;
+      R.load = Math.min(1, R.load + dt * 0.25);
+    } else if (!reduce && now - ptr.last > IDLE_RESUME){
+      autopilot(dt);
+    } else { R.painting = false; R.load = Math.min(1, R.load + dt / (RELOAD_TIME * 3)); }
+    R.tx = clamp(R.tx, zone.x + RL / 2, zone.x + zone.w - RL / 2);
+    R.ty = clamp(R.ty, zone.y + RD / 2 + 2, zone.y + zone.h - RD / 2 - 2);
+    R.px = R.x; R.py = R.y;
+    var k = 1 - Math.exp(-FOLLOW * dt);
+    R.x += (R.tx - R.x) * k; R.y += (R.ty - R.y) * k;
+    if (R.travel && Math.abs(R.tx - R.x) < 6 && Math.abs(R.ty - R.y) < 6) R.travel = false;
+    var vx = dt > 0 ? (R.x - R.px) / dt : 0;
+    R.tilt += (clamp(vx * 0.00022, -0.12, 0.12) - R.tilt) * Math.min(1, dt * 8);
+    R.lift += ((R.painting ? 0 : 1) - R.lift) * Math.min(1, dt * 10);
+    if (R.painting && R.lift < 0.5 && (ptr.active || Math.abs(R.tx - R.x) < 8)) rollTo(R.px, R.py, R.x, R.y);
+    for (var i = 0; i < drips.length; i++){
+      var d = drips[i];
+      if (d.len < d.max){ d.len = Math.min(d.max, d.len + d.v * dt * (1 - d.len / d.max * 0.7)); }
+    }
+    if (fade > 0) fade = Math.max(0, fade - dt / RESET_FADE);
+    coverT += dt;
+    if (coverT > 0.8 && fade === 0){
+      coverT = 0;
+      if (resetIn < 0 && coverage() > RESET_AT) resetIn = RESET_HOLD;
+    }
+    if (resetIn >= 0){ resetIn -= dt; if (resetIn < 0){ resetIn = -1; nextWall(); } }
+  }
+
+  function render(){
+    compose(ctx);
+    if (fade > 0){ ctx.globalAlpha = fade; ctx.drawImage(prev, 0, 0); ctx.globalAlpha = 1; }
+    drawRoller();
+  }
+
+  function tick(t){
+    if (!running) return;
+    var dt = Math.min(0.05, lt ? (t - lt) / 1000 : 0.016); lt = t;
+    step(dt, t); render();
+    if (!visible || document.hidden || (reduce && !ptr.active && t - ptr.last > 500)){ running = false; lt = 0; return; }
+    requestAnimationFrame(tick);
+  }
+  function kick(){ if (!running && visible && !document.hidden){ running = true; lt = 0; requestAnimationFrame(tick); } }
+
+  /* -- input: mouse paints on hover, a finger paints while down, in any direction -- */
+  function touched(){ if (!touchedOnce){ touchedOnce = true; if (hint) hint.classList.add('gone'); } }
+  zoneEl.addEventListener('pointerdown', function(e){
+    ptr.touch = e.pointerType !== 'mouse'; ptr.active = true; ptr.cx = e.clientX; ptr.cy = e.clientY; ptr.last = performance.now();
+    if (ptr.touch){ try { zoneEl.setPointerCapture(e.pointerId); } catch (_){} e.preventDefault(); }
+    touched(); kick();
+  });
+  zoneEl.addEventListener('pointermove', function(e){
+    if (e.pointerType === 'mouse'){ ptr.active = true; ptr.touch = false; }
+    if (!ptr.active) return;
+    ptr.cx = e.clientX; ptr.cy = e.clientY; ptr.last = performance.now(); touched(); kick();
+  });
+  function up(e){ if (e.pointerType !== 'mouse' || e.type === 'pointerleave'){ ptr.active = false; ptr.last = performance.now(); } }
+  zoneEl.addEventListener('pointerup', up); zoneEl.addEventListener('pointercancel', up); zoneEl.addEventListener('pointerleave', up);
+  zoneEl.addEventListener('touchmove', function(e){ e.preventDefault(); }, { passive: false });
+
+  if ('IntersectionObserver' in window){
+    new IntersectionObserver(function(en){ visible = en[0].isIntersecting; if (visible) kick(); }).observe(hero);
+  }
+  document.addEventListener('visibilitychange', function(){ if (!document.hidden) kick(); });
+
+  function start(){
+    if (setup() && reduce){
+      // still frame: half a wall already rolled
+      for (var i = 0; i < 240; i++){ autopilot(1 / 60); step(0, 0); R.x = R.tx; R.y = R.ty; R.lift = 0; rollTo(R.px, R.py, R.x, R.y); }
+      R.lift = 1;
+    }
+    render(); kick();
+  }
+  if ('ResizeObserver' in window) new ResizeObserver(function(){ if (setup()) { render(); kick(); } }).observe(hero);
+  else window.addEventListener('resize', function(){ if (setup()) render(); });
+  start();
+})();
+
+/* ===== Section edges: ragged roller ends, drips that run when seen ===== */
+(function(){
+  'use strict';
+  var DRIP_TIME = 2.8; // s for a drip to finish running
+  var edges = document.querySelectorAll('.edge');
+  var s = 3;
+  function rnd(){ s = (s * 16807) % 2147483647; return (s - 1) / 2147483646; }
+  function draw(el){
+    var w = Math.round(el.clientWidth), h = el.clientHeight || 26;
+    if (!w || el._w === w) return; el._w = w;
+    var up = el.classList.contains('edge--up'), seg = w < 700 ? 92 : 150, offs = [], i;
+    for (i = 0; i <= Math.ceil(w / seg) + 1; i++) offs.push((rnd() - 0.5) * 12);
+    var pts = [];
+    for (var x = 0; x <= w; x += 3){
+      var si = Math.floor(x / seg), f = (x % seg) / seg, a = offs[si], b = offs[si + 1];
+      var blend = f > 0.93 ? (1 - Math.cos((f - 0.93) / 0.07 * Math.PI)) / 2 : 0;
+      var y = h * 0.5 + a + (b - a) * blend + Math.sin(x * 0.013) * 1.5 + (rnd() - 0.5) * 1.6;
+      pts.push(x.toFixed(1) + ',' + y.toFixed(1));
+    }
+    var d = up ? 'M0,' + (h + 2) + ' L' + pts.join(' L') + ' L' + w + ',' + (h + 2) + 'Z'
+               : 'M0,-2 L' + pts.join(' L') + ' L' + w + ',-2Z';
+    var dots = '';
+    for (i = 0; i < w / 6; i++){
+      var dx = rnd() * w, p = pts[Math.min(pts.length - 1, Math.round(dx / 3))].split(','), dy = +p[1] + (up ? -1 : 1) * (1 + rnd() * 4);
+      dots += '<circle cx="' + dx.toFixed(1) + '" cy="' + dy.toFixed(1) + '" r="' + (0.5 + rnd() * 1.1).toFixed(2) + '" opacity="' + (0.3 + rnd() * 0.6).toFixed(2) + '"/>';
+    }
+    el.innerHTML = '<svg viewBox="0 0 ' + w + ' ' + h + '" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="' + d + '"/><g fill="currentColor">' + dots + '</g></svg>';
+    var n = +el.getAttribute('data-drips') || 0;
+    for (i = 0; i < n; i++){
+      var dr = document.createElement('span'); dr.className = 'drip';
+      dr.style.left = (8 + (i + rnd() * 0.7) * (84 / n)) + '%';
+      dr.style.setProperty('--w', (4 + rnd() * 3).toFixed(1) + 'px');
+      dr.style.setProperty('--len', Math.round(16 + rnd() * 46) + 'px');
+      dr.style.setProperty('--t', (DRIP_TIME * (0.7 + rnd() * 0.6)).toFixed(2) + 's');
+      dr.style.setProperty('--d', (rnd() * 0.8).toFixed(2) + 's');
+      el.appendChild(dr);
+    }
+  }
+  function all(){ edges.forEach(draw); }
+  all();
+  window.addEventListener('resize', all);
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(en){ en.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -15% 0px' });
+    edges.forEach(function(e){ io.observe(e); });
+  } else edges.forEach(function(e){ e.classList.add('on'); });
+})();
+
+/* ===== Service rows pick that service in the form ===== */
+(function(){
+  document.querySelectorAll('.row[data-service]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var box = document.querySelector('input[name=svc][value="' + a.getAttribute('data-service') + '"]');
+      if (box) box.checked = true;
+    });
+  });
+})();
+
+/* ===== Free estimate: composed into a text message ===== */
+(function(){
+  'use strict';
+  var NUMBER = '+13374586145';
+  var form = document.getElementById('estForm'); if (!form) return;
+  var out = document.getElementById('msgOut'), fb = document.getElementById('fallback'), copyBtn = document.getElementById('copyBtn');
+  function val(id){ return (document.getElementById(id).value || '').trim(); }
+  function mark(id, bad){ document.getElementById(id).classList.toggle('bad', bad); }
+  ['name', 'job'].forEach(function(id){ document.getElementById(id).addEventListener('input', function(){ mark('f-' + id, false); }); });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = val('name'), job = val('job'), ok = true;
+    mark('f-name', !name); mark('f-job', !job);
+    if (!name){ document.getElementById('name').focus(); ok = false; }
+    else if (!job){ document.getElementById('job').focus(); ok = false; }
+    if (!ok) return;
+    var svc = [].map.call(form.querySelectorAll('input[name=svc]:checked'), function(c){ return c.value; });
+    var lines = ['Hi One Of A Kind! I\'d like a free estimate.', '', 'Name: ' + name];
+    if (svc.length) lines.push('Looking for: ' + svc.join(', '));
+    lines.push('The job: ' + job);
+    if (val('where')) lines.push('Where: ' + val('where'));
+    if (val('when')) lines.push('When: ' + val('when'));
+    var msg = lines.join('\n');
+    out.textContent = msg; fb.classList.add('on');
+    window.location.href = 'sms:' + NUMBER + '?&body=' + encodeURIComponent(msg);
+  });
+  copyBtn.addEventListener('click', function(){
+    var t = out.textContent;
+    function done(){ copyBtn.textContent = 'Copied'; setTimeout(function(){ copyBtn.textContent = 'Copy message'; }, 1800); }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done, function(){});
+    else { var r = document.createRange(); r.selectNodeContents(out); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+  });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
