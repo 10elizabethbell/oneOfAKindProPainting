@@ -67,7 +67,7 @@ p{margin:0}
 .brand{display:flex;align-items:center;gap:9px;text-decoration:none;min-height:48px}
 .brand svg{width:40px;height:40px;flex:none}
 .brand b{display:block;white-space:nowrap;font-style:italic;font-weight:900;font-size:1.12rem;line-height:1;letter-spacing:-.01em}
-.brand small{display:block;margin-top:3px;font-size:.58rem;font-weight:800;letter-spacing:.1em;line-height:1.25;text-transform:uppercase;color:var(--gold)}
+.brand small{display:block;margin-top:3px;font-size:.7rem;font-weight:800;letter-spacing:.1em;line-height:1.25;text-transform:uppercase;color:var(--gold)}
 .tel{flex:none;display:flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font-weight:800;font-size:.98rem;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
 .tel svg{width:18px;height:18px;color:var(--gold)}
 .tel:hover{color:var(--gold)}
@@ -102,7 +102,7 @@ p{margin:0}
 .care{position:relative;background:var(--navy);color:var(--on-navy);padding:64px 0 88px;z-index:1}
 .care h2{color:var(--paper)}
 .care h2 span{color:var(--gold)}
-.care p{margin-top:22px;font-size:1.12rem;max-width:58ch}
+.care p{margin-top:22px;font-size:1.18rem;max-width:58ch}
 .care .btn{margin-top:30px;width:100%}
 
 /* ---------- steps ---------- */
@@ -119,7 +119,7 @@ p{margin:0}
 .estimate h2{color:var(--navy)}
 form{margin-top:28px;display:grid;gap:22px;max-width:640px}
 .field{display:grid;gap:8px}
-label,.legend{font-weight:800;font-size:.98rem;color:var(--ink)}
+label,.legend{font-weight:800;font-size:1rem;color:var(--ink)}
 .opt{font-weight:500;color:var(--ink-2)}
 input[type=text],input[type=tel],textarea{width:100%;min-height:54px;padding:14px 16px;border:2px solid rgba(22,44,110,.22);border-radius:12px;background:var(--paper);color:var(--ink);font:500 17px/1.4 var(--sys);caret-color:var(--navy);transition:border-color .15s,outline-color .15s}
 textarea{min-height:120px;resize:vertical}
@@ -134,29 +134,29 @@ fieldset{border:0;margin:0;padding:0;display:grid;gap:10px}
 .chip input:checked+span{background:var(--navy);border-color:var(--navy);color:var(--paper)}
 .chip input:checked+span::before{background:var(--gold);border-color:var(--gold);opacity:1}
 .chip span:hover,.chip input:focus-visible+span{outline:3px solid var(--accent);outline-offset:1px}
-.err{display:none;color:#b3261e;font-weight:600;font-size:.95rem}
+.err{display:none;color:#b3261e;font-weight:600;font-size:.94rem}
 .field.bad .err{display:block}
 .field.bad input,.field.bad textarea{border-color:#b3261e}
 .send{width:100%;border:0;background:var(--navy);color:var(--paper)}
 .send:hover{background:var(--navy-2)}
 .send:hover,.send:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.note{color:var(--ink-2);font-size:.98rem}
-.note a{font-weight:800;color:var(--navy);white-space:nowrap}
+.note{color:var(--ink-2);font-size:1rem}
+.note a{display:inline-block;padding:12px 0;margin:-12px 0;font-weight:800;color:var(--navy);white-space:nowrap}
 .fallback{display:none;margin-top:4px;padding:18px;border-radius:14px;background:rgba(22,44,110,.06)}
 .fallback.on{display:grid;gap:12px}
-.fallback pre{margin:0;white-space:pre-wrap;font:500 .98rem/1.5 var(--sys);color:var(--ink)}
-.copy{justify-self:start;min-height:44px;padding:0 18px;border:2px solid var(--navy);border-radius:999px;background:transparent;color:var(--navy);font:800 .95rem var(--sys);cursor:pointer}
+.fallback pre{margin:0;white-space:pre-wrap;font:500 1rem/1.5 var(--sys);color:var(--ink)}
+.copy{justify-self:start;min-height:44px;padding:0 18px;border:2px solid var(--navy);border-radius:999px;background:transparent;color:var(--navy);font:800 .94rem var(--sys);cursor:pointer}
 .copy:hover,.copy:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 
 /* ---------- footer: the close ---------- */
 footer{position:relative;background:var(--navy);color:var(--on-navy);padding:70px 0 40px}
 footer h2{color:var(--paper);font-size:clamp(2.2rem,10vw,4.4rem)}
 footer h2 span{color:var(--gold)}
-.foot{margin-top:36px;display:grid;gap:6px;font-size:1.02rem}
+.foot{margin-top:36px;display:grid;gap:6px;font-size:1rem}
 .foot strong{color:var(--paper);font-weight:800}
 .foot a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--paper);word-break:break-word}
 .foot a:hover{color:var(--gold)}
-.fine{margin-top:30px;font-size:.88rem;color:var(--on-navy-2)}
+.fine{margin-top:30px;font-size:.875rem;color:var(--on-navy-2)}
 
 /* ---------- desktop ---------- */
 @media (max-width:380px){
@@ -176,7 +176,7 @@ footer h2 span{color:var(--gold)}
   .top{padding-top:18px}
   .brand svg{width:48px;height:48px}
   .brand b{font-size:1.4rem}
-  .brand small{font-size:.68rem}
+  .brand small{font-size:.75rem}
   .tel{font-size:1.15rem}
   .hero-copy{padding-top:9vh;max-width:min(46vw,640px)}
   .promise{font-size:1.25rem}

@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "gray-on-color",
+        "value": "text #e9edf8 on bg #162c6e",
+        "createdAt": "2026-10-19T03:44:20.817Z",
+        "reason": "Claude: #e9edf8 is a navy-tinted near-white (13:1 on #162c6e), the tint the floor asks for"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "<ul> \"rows\": children flush against border-top on top (no inset)",
+        "createdAt": "2026-10-19T03:44:20.895Z",
+        "reason": "Claude: ruled list; border-top is a divider line, rows carry their own 12px vertical padding"
+      },
+      {
+        "rule": "overused-font",
+        "value": "primary font: roboto",
+        "createdAt": "2026-10-19T03:44:20.969Z",
+        "reason": "Ellie house style (pitch-site ellie-taste.md): system font stack on every pitch site; Roboto is only the Android system face"
+      }
+    ]
+  }
+}
